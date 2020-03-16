@@ -188,24 +188,9 @@ class DefaultDashboard extends Component {
           <Colxx>
               <Card className="mb-4">
                   <CardBody>
-                      /*
-                      <FormGroup className="error-l-150">
-                          <Label className="d-block">Custom Single Checkbox </Label>
-                          <FormikCustomCheckbox
-                              name="checkboxCustomSingle"
-                              value={values.checkboxCustomSingle}
-                              label="Agree to something"
-                              onChange={setFieldValue}
-                              onBlur={setFieldTouched}
-                          />
-                          {errors.checkboxCustomSingle &&
-                          touched.checkboxCustomSingle ? (
-                              <div className="invalid-feedback d-block">
-                                  {errors.checkboxCustomSingle}
-                              </div>
-                          ) : null}
-                      </FormGroup>
-                      */
+
+
+
                   </CardBody>
               </Card>
           </Colxx>
