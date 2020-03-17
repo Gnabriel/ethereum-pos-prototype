@@ -4,7 +4,7 @@ import {
     Button,
     Card,
     CardBody,
-    CardTitle, FormGroup, Input,
+    CardTitle, CustomInput, FormGroup, Input,
     InputGroup,
     InputGroupAddon, Label,
     Pagination,
@@ -13,42 +13,37 @@ import {
     Row
 } from 'reactstrap';
 import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
-import Breadcrumb from '../../../containers/navs/Breadcrumb';
-import IconCardsCarousel from '../../../containers/dashboards/IconCardsCarousel';
-import RecentOrders from '../../../containers/dashboards/RecentOrders';
-import Logs from '../../../containers/dashboards/Logs';
-import Tickets from '../../../containers/dashboards/Tickets';
-import Calendar from '../../../containers/dashboards/Calendar';
-import BestSellers from '../../../containers/dashboards/BestSellers';
-import ProfileStatuses from '../../../containers/dashboards/ProfileStatuses';
-import GradientCardContainer from '../../../containers/dashboards/GradientCardContainer';
-import Cakes from '../../../containers/dashboards/Cakes';
-import GradientWithRadialProgressCard from '../../../components/cards/GradientWithRadialProgressCard';
-import SortableStaticticsRow from '../../../containers/dashboards/SortableStaticticsRow';
-import AdvancedSearch from '../../../containers/dashboards/AdvancedSearch';
-import SmallLineCharts from '../../../containers/dashboards/SmallLineCharts';
-import SalesChartCard from '../../../containers/dashboards/SalesChartCard';
-import ProductCategoriesPolarArea from '../../../containers/dashboards/ProductCategoriesPolarArea';
-import WebsiteVisitsChartCard from '../../../containers/dashboards/WebsiteVisitsChartCard';
-import ConversionRatesChartCard from '../../../containers/dashboards/ConversionRatesChartCard';
-import TopRatedItems from '../../../containers/dashboards/TopRatedItems';
-import Basic from "../../../containers/wizard/Basic";
 import IntlMessages from "../../../helpers/IntlMessages";
 import CardText from "reactstrap/es/CardText";
-import {
-    FormikReactSelect,
-    FormikCheckboxGroup,
-    FormikCheckbox,
-    FormikRadioButtonGroup,
-    FormikCustomCheckbox,
-    FormikCustomCheckboxGroup,
-    FormikCustomRadioGroup,
-    FormikTagsInput,
-    FormikSwitch,
-    FormikDatePicker
-} from "../../../containers/form-validations/FormikFields";
+import {Form, Formik} from "formik";
+import {FormikCustomCheckbox} from "../../../containers/form-validations/FormikFields";
+import * as Yup from "yup";
+
+const SignupSchema = Yup.object().shape({
+    checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to something")
+});
+
 
 class DefaultDashboard extends Component {
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit = (values, { setSubmitting }) => {
+
+        {/*
+        const payload = {
+            ...values,
+            reactSelect: values.reactSelect.map(t => t.value)
+        };
+        */}
+
+        setTimeout(() => {
+            setSubmitting(false);
+        }, 1000);
+    };
+
   render() {
     const { messages } = this.props.intl;
     return (
@@ -82,7 +77,7 @@ class DefaultDashboard extends Component {
                   </Pagination>
               </Colxx>
           </Row>
-        // Header
+      {/* Header */}
         <Row>
           <Colxx xxs="12">
             <h2>
@@ -91,7 +86,7 @@ class DefaultDashboard extends Component {
               <Separator className="mb-5" />
           </Colxx>
         </Row>
-        // Step 1
+      {/* Step 1 */}
         <Row>
           <Colxx>
             <Card className="mb-4">
@@ -112,7 +107,7 @@ class DefaultDashboard extends Component {
             </Card>
           </Colxx>
         </Row>
-        // Step 2
+          {/* Step 2 */}
         <Row>
             <Colxx>
                 <Card className="mb-4">
@@ -160,7 +155,7 @@ class DefaultDashboard extends Component {
                 </Card>
             </Colxx>
         </Row>
-        // Step 3
+          {/* Step 3 */}
         <Row>
           <Colxx>
             <Card className="mb-4">
@@ -183,16 +178,65 @@ class DefaultDashboard extends Component {
             </Card>
           </Colxx>
       </Row>
-      // Validation
+          {/* Validation */}
       <Row>
           <Colxx>
               <Card className="mb-4">
                   <CardBody>
+                      <Formik
+                          initialValues={{
+                              checkboxCustomSingle: false
+                          }}
+                          validationSchema={SignupSchema}
+                          onSubmit={this.handleSubmit}>
+                          {({
+                                handleSubmit,
+                                setFieldValue,
+                                setFieldTouched,
+                                handleChange,
+                                handleBlur,
+                                values,
+                                errors,
+                                touched,
+                                isSubmitting
+                            }) => (
+                              <Form className="av-tooltip tooltip-label-right">
+                                  <FormGroup className="error-l-150">
+                                      <FormikCustomCheckbox
+                                          name="checkboxCustomSingle"
+                                          value={values.checkboxCustomSingle}
+                                          label="Agree to something"
+                                          onChange={setFieldValue}
+                                          onBlur={setFieldTouched}
+                                      />
+                                      {errors.checkboxCustomSingle &&
+                                      touched.checkboxCustomSingle ? (
+                                          <div className="invalid-feedback d-block">
+                                              {errors.checkboxCustomSingle}
+                                          </div>
+                                      ) : null}
+                                  </FormGroup>
 
+                                  <Button color="primary" type="submit" size="lg" className="mb-2">
+                                      CONTINUE TO UPLOAD
+                                  </Button>
+                              </Form>
+                          )}
+                      </Formik>
                   </CardBody>
               </Card>
           </Colxx>
       </Row>
+      {/* Next step */}
+      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center',}}>
+          <Row>
+              <Colxx>
+                  <Button color="primary" size="lg" className="mb-2">
+                      <IntlMessages id="CONTINUE TO UPLOAD" />
+                  </Button>
+              </Colxx>
+          </Row>
+      </div>
       </Fragment>
     );
   }
@@ -213,6 +257,10 @@ function copyStringToClipboard(str) {
     document.execCommand('copy');
     // Remove temporary element
     document.body.removeChild(el);
+}
+
+function handleInputChange(event) {
+
 }
 
 export default injectIntl(DefaultDashboard);
