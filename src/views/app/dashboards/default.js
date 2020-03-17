@@ -188,7 +188,6 @@ class DefaultDashboard extends Component {
           <Colxx>
               <Card className="mb-4">
                   <CardBody>
-                      
 
                   </CardBody>
               </Card>

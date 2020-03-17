@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flooignore" beforeDir="false" afterPath="$PROJECT_DIR$/.flooignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/menu-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/menu-left.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/applications/SurveyCharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/applications/SurveyCharts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/applications/survey-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/applications/survey-detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/pages/miscellaneous/invoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/pages/miscellaneous/invoice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/ui/components/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/ui/components/cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app_backup/pages/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app_backup/pages/blog/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app_backup/ui/components/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app_backup/ui/components/cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/default.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/default.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="190" column="22" lean-forward="true" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
+            <state relative-caret-position="154">
+              <caret line="190" column="20" selection-start-line="190" selection-start-column="20" selection-end-line="190" selection-end-column="20" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -67,8 +59,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/containers/applications/AddNewTodoModal.js" />
-        <option value="$PROJECT_DIR$/src/views/app/dashboards/default.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/default.js" />
       </list>
     </option>
   </component>
@@ -145,12 +137,12 @@
       <workItem from="1584444115135" duration="194000" />
       <workItem from="1584444357627" duration="94000" />
       <workItem from="1584444512433" duration="478000" />
-      <workItem from="1584445157547" duration="1831000" />
+      <workItem from="1584445157547" duration="1945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6950000" />
+    <option name="totallyTimeSpent" value="7064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -231,8 +223,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/default.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="190" column="22" lean-forward="true" selection-start-line="190" selection-start-column="22" selection-end-line="190" selection-end-column="22" />
+        <state relative-caret-position="154">
+          <caret line="190" column="20" selection-start-line="190" selection-start-column="20" selection-end-line="190" selection-end-column="20" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
