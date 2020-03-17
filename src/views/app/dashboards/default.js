@@ -259,8 +259,5 @@ function copyStringToClipboard(str) {
     document.body.removeChild(el);
 }
 
-function handleInputChange(event) {
-
-}
 
 export default injectIntl(DefaultDashboard);
