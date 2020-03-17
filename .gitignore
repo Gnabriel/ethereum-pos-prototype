@@ -106,3 +106,4 @@ packages/react-devtools-shell/dist
 
 ####### ta bort workspace.xml
 .idea/workspace.xml
+.idea
