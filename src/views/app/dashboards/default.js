@@ -20,6 +20,7 @@ import {FormikCustomCheckbox} from "../../../containers/form-validations/FormikF
 import * as Yup from "yup";
 import {Link} from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import * as ReactDOM from "react-dom";
 
 const SignupSchema = Yup.object().shape({
     checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to something")
@@ -33,10 +34,7 @@ class DefaultDashboard extends Component {
     }
 
     handleSubmit = (values, {setSubmitting}) => {
-        const payload = {
-            ...values,
-            reactSelect: values.reactSelect.map(t => t.value)
-        };
+        window.location.href='/app/dashboards/steptwo';
 
         setTimeout(() => {
             setSubmitting(false);
@@ -91,7 +89,7 @@ class DefaultDashboard extends Component {
                         <Card className="mb-4">
                             <CardBody>
                                 <CardTitle>
-                                    <IntlMessages id="1. Install Python and Git"/>
+                                    1. Install Python and Git
                                 </CardTitle>
                                 <p>To install Git and Python type the following in the terminal window:</p>
                                 <InputGroup className="mb-3">
@@ -99,7 +97,7 @@ class DefaultDashboard extends Component {
                                     <InputGroupAddon addonType="append">
                                         <Button outline color="secondary"
                                                 onClick={() => copyStringToClipboard("sudo apt install git-all")}>
-                                            <IntlMessages id="Copy"/>
+                                            Copy
                                         </Button>
                                     </InputGroupAddon>
                                 </InputGroup>
@@ -113,19 +111,21 @@ class DefaultDashboard extends Component {
                         <Card className="mb-4">
                             <CardBody>
                                 <CardTitle>
-                                    <IntlMessages id="2. Clone and install the deposit tool repository"/>
+                                    2. Clone and install the deposit tool repository
                                 </CardTitle>
-                                <p>
+                                <span>
                                     Type the following lines into the terminal window and replace the n with the amount
                                     of validators you plan to run:
-                                </p>
+                                    <br/>
+                                    <br/>
+                                </span>
                                 <InputGroup className="mb-3">
                                     <Input value={"git clone https://github.com/ethereum/eth2.0-deposit.git"}
                                            disabled={true}/>
                                     <InputGroupAddon addonType="append">
                                         <Button outline color="secondary"
                                                 onClick={() => copyStringToClipboard("git clone https://github.com/ethereum/eth2.0-deposit.git")}>
-                                            <IntlMessages id="Copy"/>
+                                            Copy
                                         </Button>
                                     </InputGroupAddon>
                                 </InputGroup>
@@ -134,7 +134,7 @@ class DefaultDashboard extends Component {
                                     <InputGroupAddon addonType="append">
                                         <Button outline color="secondary"
                                                 onClick={() => copyStringToClipboard("cd eth2.0-deposit")}>
-                                            <IntlMessages id="Copy"/>
+                                            Copy
                                         </Button>
                                     </InputGroupAddon>
                                 </InputGroup>
@@ -143,7 +143,7 @@ class DefaultDashboard extends Component {
                                     <InputGroupAddon addonType="append">
                                         <Button outline color="secondary"
                                                 onClick={() => copyStringToClipboard("pip3 install -r requirements.txt")}>
-                                            <IntlMessages id="Copy"/>
+                                            Copy
                                         </Button>
                                     </InputGroupAddon>
                                 </InputGroup>
@@ -152,7 +152,7 @@ class DefaultDashboard extends Component {
                                     <InputGroupAddon addonType="append">
                                         <Button outline color="secondary"
                                                 onClick={() => copyStringToClipboard("python3 deposit.py --num_validators n")}>
-                                            <IntlMessages id="Copy"/>
+                                            Copy
                                         </Button>
                                     </InputGroupAddon>
                                 </InputGroup>
@@ -166,18 +166,18 @@ class DefaultDashboard extends Component {
                         <Card className="mb-4">
                             <CardBody>
                                 <CardTitle>
-                                    <IntlMessages id="3. Save the key files and get the validator file ready"/>
+                                    3. Save the key files and get the validator file ready
                                 </CardTitle>
                                 <CardText>
-                                    <p>
+                                    <span>
                                         You should now be able to save the file <b>signing-keystore-...json </b>
                                         which contains your key pairs.
                                         Please make sure to keep it safe, preferably offline.
-                                    </p>
-                                    <p>
-                                        The second file you will export is <b>deposit_data.json </b>
+                                    </span>
+                                    <span>
+                                        <br/>The second file you will export is <b>deposit_data.json </b>
                                         that you will need to upload in the next step.
-                                    </p>
+                                    </span>
                                 </CardText>
                             </CardBody>
                         </Card>
@@ -209,9 +209,11 @@ class DefaultDashboard extends Component {
                                             <FormGroup className="error-l-150">
                                                 <FormikCustomCheckbox
                                                     name="checkboxCustomSingle"
+                                                    className="form-control"
                                                     value={values.checkboxCustomSingle}
-                                                    label="Agree to something"
-                                                    onChange={setFieldValue}{funktionen(this)}
+                                                    label="I am keeping my keys safe and have
+                                                    backed up my mnemonic phrase"
+                                                    onChange={setFieldValue}
                                                     onBlur={setFieldTouched}
                                                 />
                                                 {errors.checkboxCustomSingle &&
@@ -222,14 +224,6 @@ class DefaultDashboard extends Component {
                                                 ) : null}
                                             </FormGroup>
 
-                                            {/*
-                                            <Button onClick={event =>  window.location.href='/app/dashboards/steptwo'}
-                                                    color="primary" type="submit" size="lg"
-                                                    className="mb-2">
-                                                CONTINUE TO UPLOAD
-                                            </Button>
-                                            */}
-
                                             {/* Next step */}
                                             <div style={{
                                                 display: 'flex',
@@ -238,16 +232,13 @@ class DefaultDashboard extends Component {
                                             }}>
                                                 <Row>
                                                     <Colxx>
-                                                        <NavLink to="/app/dashboards/steptwo">
-                                                            <Button color="primary" type="submit" size="lg"
-                                                                    className="mb-2" disabled id="apan">
-                                                                CONTINUE TO UPLOAD
-                                                            </Button>
-                                                        </NavLink>
+                                                        <Button color="primary" type="submit" size="lg"
+                                                                className="mb-2" >
+                                                            CONTINUE TO UPLOAD
+                                                        </Button>
                                                     </Colxx>
                                                 </Row>
                                             </div>
-
                                         </Form>
                                     )}
                                 </Formik>
@@ -277,15 +268,17 @@ function copyStringToClipboard(str) {
     document.body.removeChild(el);
 }
 
-function funktionen(checkbox) {
+{/*
+function funktionen(checkbox, knapp) {
     //If the checkbox has been checked
     if(checkbox.checked){
         //Set the disabled property to FALSE and enable the button.
-        document.getElementById("apan").disabled = false;
+        knapp.disabled = false;
     } else{
         //Otherwise, disable the submit button.
-        document.getElementById("apan").disabled = true;
+        knapp.disabled = true;
     }
 }
+*/}
 
 export default injectIntl(DefaultDashboard);
