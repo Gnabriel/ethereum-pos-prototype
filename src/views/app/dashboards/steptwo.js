@@ -81,7 +81,7 @@ class StepTwoDashboard extends Component {
                 <Row>
                     <Colxx xxs="12">
                         <h2>
-                            Generate key pairs
+                            STEP TWO
                         </h2>
                         <Separator className="mb-5" />
                     </Colxx>
