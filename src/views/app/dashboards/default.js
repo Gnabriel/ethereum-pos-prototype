@@ -34,7 +34,7 @@ class DefaultDashboard extends Component {
     }
 
     handleSubmit = (values, {setSubmitting}) => {
-        window.location.href='/app/dashboards/steptwo';
+        window.location.href='/app/dashboards/summary';
 
         setTimeout(() => {
             setSubmitting(false);
@@ -45,6 +45,7 @@ class DefaultDashboard extends Component {
         const {messages} = this.props.intl;
         return (
             <Fragment>
+                {/* Page Navigation */}
                 <Row>
                     <Colxx xxs="12">
                         <Pagination
@@ -74,6 +75,7 @@ class DefaultDashboard extends Component {
                         </Pagination>
                     </Colxx>
                 </Row>
+
                 {/* Header */}
                 <Row>
                     <Colxx xxs="12">
@@ -83,6 +85,7 @@ class DefaultDashboard extends Component {
                         <Separator className="mb-5"/>
                     </Colxx>
                 </Row>
+
                 {/* Step 1 */}
                 <Row>
                     <Colxx>
@@ -105,6 +108,7 @@ class DefaultDashboard extends Component {
                         </Card>
                     </Colxx>
                 </Row>
+
                 {/* Step 2 */}
                 <Row>
                     <Colxx>
@@ -160,6 +164,7 @@ class DefaultDashboard extends Component {
                         </Card>
                     </Colxx>
                 </Row>
+
                 {/* Step 3 */}
                 <Row>
                     <Colxx>
@@ -224,7 +229,7 @@ class DefaultDashboard extends Component {
                                                 ) : null}
                                             </FormGroup>
 
-                                            {/* Next step */}
+                                            {/* Next step button */}
                                             <div style={{
                                                 display: 'flex',
                                                 alignItems: 'center',
@@ -268,17 +273,6 @@ function copyStringToClipboard(str) {
     document.body.removeChild(el);
 }
 
-{/*
-function funktionen(checkbox, knapp) {
-    //If the checkbox has been checked
-    if(checkbox.checked){
-        //Set the disabled property to FALSE and enable the button.
-        knapp.disabled = false;
-    } else{
-        //Otherwise, disable the submit button.
-        knapp.disabled = true;
-    }
-}
-*/}
 
 export default injectIntl(DefaultDashboard);
+

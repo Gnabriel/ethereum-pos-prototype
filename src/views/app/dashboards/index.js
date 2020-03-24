@@ -13,8 +13,8 @@ const AnalyticsDefault = React.lazy(() =>
 const EcommerceDefault = React.lazy(() =>
   import(/* webpackChunkName: "dashboard-ecommerce" */ './ecommerce')
 );
-const StepTwoDefault = React.lazy(() =>
-    import(/* webpackChunkName: "dashboard-steptwo" */ './steptwo')
+const SummaryDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-steptwo" */ './summary')
 );
 
 const Dashboards = ({ match }) => (
@@ -38,8 +38,8 @@ const Dashboards = ({ match }) => (
         render={props => <AnalyticsDefault {...props} />}
       />
       <Route
-          path={`${match.url}/steptwo`}
-          render={props => <StepTwoDefault {...props} />}
+          path={`${match.url}/summary`}
+          render={props => <SummaryDefault {...props} />}
       />
       <Redirect to="/error" />
     </Switch>
