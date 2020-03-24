@@ -57,24 +57,29 @@ class SummaryDashboard extends Component {
                             listClassName="justify-content-center"
                         >
                             <PaginationItem>
-                                <PaginationLink className="prev" href="#">
+                                <PaginationLink className="prev" href="connect">
                                     <i className="simple-icon-arrow-left"/>
                                 </PaginationLink>
                             </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="generate">1</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="upload">2</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="connect">3</PaginationLink>
+                            </PaginationItem>
                             <PaginationItem active>
-                                <PaginationLink href="#">1</PaginationLink>
+                                <PaginationLink href="#">4</PaginationLink>
                             </PaginationItem>
-                            <PaginationItem>
-                                <PaginationLink href="#">2</PaginationLink>
-                            </PaginationItem>
-                            <PaginationItem>
-                                <PaginationLink href="#">3</PaginationLink>
-                            </PaginationItem>
-                            <PaginationItem>
+                            {/*
+                            <PaginationItem disabled>
                                 <PaginationLink className="next" href="#">
                                     <i className="simple-icon-arrow-right"/>
                                 </PaginationLink>
                             </PaginationItem>
+                            */}
                         </Pagination>
                     </Colxx>
                 </Row>

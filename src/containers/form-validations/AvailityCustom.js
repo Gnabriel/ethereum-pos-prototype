@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import { AvForm, AvField, AvGroup } from "availity-reactstrap-validation";
 import { Button, Label, Card, CardBody } from "reactstrap";
+import DropzoneComponent from "react-dropzone-component";
 
 class AvailityCustom extends Component {
   constructor(props) {
@@ -164,4 +165,4 @@ class AvailityCustom extends Component {
   }
 }
 
-export default AvailityCustom;
+ export default AvailityCustom;

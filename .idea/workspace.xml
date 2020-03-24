@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/sass/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/sass/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/steptwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/default.js">
+        <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="68">
+              <caret line="83" column="16" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="91" selection-end-column="22" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -31,11 +32,35 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/connect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="145" column="47" selection-start-line="145" selection-start-column="47" selection-end-line="145" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/summary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="243" column="53" selection-start-line="243" selection-start-column="53" selection-end-line="243" selection-end-column="53" />
+            <state relative-caret-position="69">
+              <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -44,33 +69,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/css/sass/_mixins.scss">
+        <entry file="file://$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/app/ui/components/icons.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="160" column="19" lean-forward="true" selection-start-line="160" selection-start-column="10" selection-end-line="160" selection-end-column="19" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,11 +120,16 @@
         <option value="$PROJECT_DIR$/src/containers/form-validations/checkboxapa.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/step2.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/steptwo.js" />
-        <option value="$PROJECT_DIR$/src/views/app/dashboards/index.js" />
-        <option value="$PROJECT_DIR$/src/views/app/dashboards/default.js" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/_mixins.scss" />
+        <option value="$PROJECT_DIR$/src/containers/forms/DropzoneExample.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/default.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/index.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/generate.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/summary.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/upload.js" />
+        <option value="$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/connect.js" />
       </list>
     </option>
   </component>
@@ -151,28 +160,14 @@
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="form-validations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -195,6 +190,23 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="dashboards" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -214,6 +226,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel\Documents\GitHub\ethereum-pos-prototype\src\views\app\dashboards" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -245,12 +262,12 @@
       <workItem from="1584444357627" duration="94000" />
       <workItem from="1584444512433" duration="478000" />
       <workItem from="1584445157547" duration="10045000" />
-      <workItem from="1584956752372" duration="18287000" />
+      <workItem from="1584956752372" duration="25427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33451000" />
+    <option name="totallyTimeSpent" value="40591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -276,6 +293,27 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18124007" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47069272" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25577265" />
+      <window_info anchor="bottom" id="Floobits" order="11" visible="true" weight="0.30373" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -319,16 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/ui/forms/components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/ui/components/buttons.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -345,16 +373,6 @@
           <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/forms/CustomInputExample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-876">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -448,30 +466,10 @@
         <state relative-caret-position="-28430" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/icons.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2395">
           <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -492,10 +490,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/forms/CustomInputExample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/ui/forms/components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="384" column="16" selection-start-line="384" selection-start-column="16" selection-end-line="384" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="83" column="16" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="91" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/forms/DropzoneExample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/summary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="243" column="53" selection-start-line="243" selection-start-column="53" selection-end-line="243" selection-end-column="53" />
+        <state relative-caret-position="69">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="160" column="19" lean-forward="true" selection-start-line="160" selection-start-column="10" selection-end-line="160" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="145" column="47" selection-start-line="145" selection-start-column="47" selection-end-line="145" selection-end-column="47" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>

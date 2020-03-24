@@ -27,14 +27,14 @@ const SignupSchema = Yup.object().shape({
 });
 
 
-class DefaultDashboard extends Component {
+class GenerateDashboard extends Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit = (values, {setSubmitting}) => {
-        window.location.href='/app/dashboards/summary';
+        window.location.href='/app/dashboards/upload';
 
         setTimeout(() => {
             setSubmitting(false);
@@ -53,7 +53,7 @@ class DefaultDashboard extends Component {
                             aria-label="Page navigation example"
                             listClassName="justify-content-center"
                         >
-                            <PaginationItem>
+                            <PaginationItem disabled>
                                 <PaginationLink className="prev" href="#">
                                     <i className="simple-icon-arrow-left"/>
                                 </PaginationLink>
@@ -61,17 +61,22 @@ class DefaultDashboard extends Component {
                             <PaginationItem active>
                                 <PaginationLink href="#">1</PaginationLink>
                             </PaginationItem>
-                            <PaginationItem>
-                                <PaginationLink href="#">2</PaginationLink>
+                            <PaginationItem disabled>
+                                <PaginationLink href="upload">2</PaginationLink>
                             </PaginationItem>
-                            <PaginationItem>
-                                <PaginationLink href="#">3</PaginationLink>
+                            <PaginationItem disabled>
+                                <PaginationLink href="connect">3</PaginationLink>
                             </PaginationItem>
-                            <PaginationItem>
+                            <PaginationItem disabled>
+                                <PaginationLink href="summary">4</PaginationLink>
+                            </PaginationItem>
+                            {/*
+                            <PaginationItem disabled>
                                 <PaginationLink className="next" href="#">
                                     <i className="simple-icon-arrow-right"/>
                                 </PaginationLink>
                             </PaginationItem>
+                            */}
                         </Pagination>
                     </Colxx>
                 </Row>
@@ -274,5 +279,5 @@ function copyStringToClipboard(str) {
 }
 
 
-export default injectIntl(DefaultDashboard);
+export default injectIntl(GenerateDashboard);
 
