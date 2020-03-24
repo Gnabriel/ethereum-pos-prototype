@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="83" column="16" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="91" selection-end-column="22" />
+            <state relative-caret-position="181">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -35,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
+            <state relative-caret-position="936">
               <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
@@ -47,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/connect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="145" column="47" selection-start-line="145" selection-start-column="47" selection-end-line="145" selection-end-column="47" />
+            <state relative-caret-position="154">
+              <caret line="135" column="65" selection-start-line="135" selection-start-column="65" selection-end-line="135" selection-end-column="65" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -71,10 +66,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="160" column="19" lean-forward="true" selection-start-line="160" selection-start-column="10" selection-end-line="160" selection-end-column="19" />
+            <state relative-caret-position="77">
+              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="18" selection-end-column="3" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/app/ui/components/input-groups.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="84" column="74" lean-forward="true" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,13 +173,6 @@
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="form-validations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -205,7 +205,7 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,12 +262,12 @@
       <workItem from="1584444357627" duration="94000" />
       <workItem from="1584444512433" duration="478000" />
       <workItem from="1584445157547" duration="10045000" />
-      <workItem from="1584956752372" duration="25427000" />
+      <workItem from="1584956752372" duration="27105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40591000" />
+    <option name="totallyTimeSpent" value="42269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -517,26 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="83" column="16" lean-forward="true" selection-start-line="83" selection-start-column="16" selection-end-line="91" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/forms/DropzoneExample.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -569,18 +549,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/form-validations/AvailityCustom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="160" column="19" lean-forward="true" selection-start-line="160" selection-start-column="10" selection-end-line="160" selection-end-column="19" />
+        <state relative-caret-position="77">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="18" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/ui/components/input-groups.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="84" column="74" lean-forward="true" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/connect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="145" column="47" selection-start-line="145" selection-start-column="47" selection-end-line="145" selection-end-column="47" />
+        <state relative-caret-position="154">
+          <caret line="135" column="65" selection-start-line="135" selection-start-column="65" selection-end-line="135" selection-end-column="65" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>

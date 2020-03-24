@@ -39,12 +39,12 @@ class ConnectDashboard extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit = (values, {setSubmitting}) => {
-        window.location.href='/app/dashboards/summary';
-
-        setTimeout(() => {
-            setSubmitting(false);
-        }, 1000);
+    handleSubmit(event, errors, values) {
+        console.log(errors);
+        console.log(values);
+        if (errors.length === 0) {
+            window.location.href='/app/dashboards/summary';
+        }
     };
 
     render() {
@@ -102,77 +102,86 @@ class ConnectDashboard extends Component {
                     <Colxx xxs="12">
                         <Card>
                             <CardBody>
+                                <AvForm
+                                    className="av-tooltip tooltip-label-right"
+                                    onSubmit={this.handleSubmit}>
+                                    {/* Wallet address */}
+                                    <Row>
+                                        <Colxx>
+                                            <CardTitle>
+                                                1. Enter receiving wallet address
+                                            </CardTitle>
+                                            <p>To install Git and Python type the following in the terminal window:</p>
+                                            <InputGroup className="mb-3">
+                                                <Input/>
+                                            </InputGroup>
+                                        </Colxx>
+                                    </Row>
 
-                                {/* Wallet address */}
-                                <Row>
-                                    <Colxx>
-                                        <CardTitle>
-                                            1. Enter receiving wallet address
-                                        </CardTitle>
-                                        <p>To install Git and Python type the following in the terminal window:</p>
-                                        <InputGroup className="mb-3">
-                                            <Input/>
-                                        </InputGroup>
-                                    </Colxx>
-                                </Row>
+                                    {/* Amount */}
+                                    <Row>
+                                        <Colxx>
+                                            <CardTitle>
+                                                2. Enter amount of Ether
+                                            </CardTitle>
 
-                                {/* Amount */}
-                                <Row>
-                                    <Colxx>
-                                        <CardTitle>
-                                            2. Enter amount of Ether
-                                        </CardTitle>
-
-                                        <AvForm>
                                             <AvGroup className="error-t-negative">
                                                 <Label>Bla bla bla lägg in ether.</Label>
 
-                                                <AvField
-                                                    name="minPropNumberProp"
-                                                    type="text"
-                                                    validate={{
-                                                        min: { value: 32, errorMessage: "Minimum 32 ETH" },
-                                                        required: {
-                                                            value: true,
-                                                            errorMessage: "Please enter a number"
-                                                        }
-                                                    }}
-                                                />
+                                                <Row>
+                                                    <Colxx xs={1}>
+                                                        <InputGroupAddon addonType="prepend">ETH</InputGroupAddon>
+                                                    </Colxx>
+
+                                                    <Colxx xs={11}>
+                                                    <AvField
+                                                        name="minPropNumberProp"
+                                                        type="text"
+                                                        validate={{
+                                                            min: { value: 32, errorMessage: "Minimum 32 ETH" },
+                                                            required: {
+                                                                value: true,
+                                                                errorMessage: "Please enter a number"
+                                                            }
+                                                        }}
+                                                    />
+                                                    </Colxx>
+                                                </Row>
                                             </AvGroup>
-                                        </AvForm>
-                                    </Colxx>
-                                </Row>
-
-                                {/* Private Key */}
-                                <Row>
-                                    <Colxx>
-                                        <CardTitle>
-                                            3. Enter your private key
-                                        </CardTitle>
-                                        <p>To install Git and Python type the following in the terminal window:</p>
-                                        <InputGroup className="mb-3">
-                                            <Input/>
-                                        </InputGroup>
-                                    </Colxx>
-                                </Row>
-
-                                {/* Next step button */}
-                                <div style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                }}>
-                                    <Row>
-                                        <Colxx>
-                                            <Button color="primary"
-                                                    size="lg"
-                                                    className="mb-2"
-                                                    >
-                                                CONTINUE TO SUMMARY
-                                            </Button>
                                         </Colxx>
                                     </Row>
-                                </div>
+
+                                    {/* Private Key */}
+                                    <Row>
+                                        <Colxx>
+                                            <CardTitle>
+                                                3. Enter your private key
+                                            </CardTitle>
+                                            <p>To install Git and Python type the following in the terminal window:</p>
+                                            <InputGroup className="mb-3">
+                                                <Input/>
+                                            </InputGroup>
+                                        </Colxx>
+                                    </Row>
+
+                                    {/* Next step button */}
+                                    <div style={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                    }}>
+                                        <Row>
+                                            <Colxx>
+                                                <Button color="primary"
+                                                        size="lg"
+                                                        className="mb-2"
+                                                        type="submit">
+                                                    CONTINUE TO SUMMARY
+                                                </Button>
+                                            </Colxx>
+                                        </Row>
+                                    </div>
+                                </AvForm>
                             </CardBody>
                         </Card>
                     </Colxx>
@@ -183,21 +192,5 @@ class ConnectDashboard extends Component {
     }
 }
 
-function copyStringToClipboard(str) {
-    // Create new element
-    var el = document.createElement('textarea');
-    // Set value (string to be copied)
-    el.value = str;
-    // Set non-editable to avoid focus and move outside of view
-    el.setAttribute('readonly', '');
-    el.style = {position: 'absolute', left: '-9999px'};
-    document.body.appendChild(el);
-    // Select text inside element
-    el.select();
-    // Copy text to clipboard
-    document.execCommand('copy');
-    // Remove temporary element
-    document.body.removeChild(el);
-}
 
 export default injectIntl(ConnectDashboard);
