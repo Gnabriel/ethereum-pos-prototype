@@ -3,7 +3,7 @@ import {injectIntl} from 'react-intl';
 import {
     Button,
     Card,
-    CardBody,
+    CardBody, CardSubtitle,
     CardTitle, CustomInput, FormGroup, Input,
     InputGroup,
     InputGroupAddon, Label,
@@ -23,6 +23,11 @@ import { NavLink } from "react-router-dom";
 import * as ReactDOM from "react-dom";
 import EthereumHeader from "../img/ethereum-pos.jpg"
 import CardImg from "reactstrap/es/CardImg";
+import LineChart from "../../../components/charts/Line";
+import {lineChartData} from "../../../data/charts";
+
+
+
 
 const SignupSchema = Yup.object().shape({
     checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to something")
@@ -98,10 +103,23 @@ class OverviewDashboard extends Component {
 
                 <Row>
                     <Colxx>
-                        <Card className="mb-4">
-                            <CardImg variant="top" src={EthereumHeader} height="1000"/>
-                            <CardBody>
-                            </CardBody>
+                        <Card id="ethereum-header-card" className="mb-4">
+                            <CardImg id="ethereum-header" class="mw-20" variant="top" src={EthereumHeader} />
+
+                            <Row>
+                                <Colxx>
+                                    <span id="vertical-text">VALIDATOR ISSUANCE (APR)</span>
+                                </Colxx>
+
+                                <Colxx xxs="12" lg="6" className="mb-5">
+                                    <CardSubtitle>
+                                        Hejhej
+                                    </CardSubtitle>
+                                    <div className="chart-container">
+                                        <LineChart shadow data={lineChartData} />
+                                    </div>
+                                </Colxx>
+                            </Row>
                         </Card>
                     </Colxx>
                 </Row>
@@ -111,6 +129,13 @@ class OverviewDashboard extends Component {
                     <Colxx>
                         <Card className="mb-4">
                             <CardBody>
+                                You are about to become a validator of the ethereum network.
+                                Each validation requires a staking of 32 Ether(the Ethereum currency).
+                                You are allowed to make up to 5 validations.
+                                Due to the risk of phishing please follow these precautions:
+                                1.To make sure you are using the right url, manually write the url and reload the page.
+                                2. Never copy/paste an wallet adress. You should always manually write it.
+
                                 <Formik
                                     initialValues={{
                                         checkboxCustomSingle: false
@@ -134,8 +159,7 @@ class OverviewDashboard extends Component {
                                                     name="checkboxCustomSingle"
                                                     className="form-control"
                                                     value={values.checkboxCustomSingle}
-                                                    label="I am keeping my keys safe and have
-                                                    backed up my mnemonic phrase"
+                                                    label="I have read and understand the precautions"
                                                     onChange={setFieldValue}
                                                     onBlur={setFieldTouched}
                                                 />
@@ -157,7 +181,7 @@ class OverviewDashboard extends Component {
                                                     <Colxx>
                                                         <Button color="primary" type="submit" size="lg"
                                                                 className="mb-2" >
-                                                            CONTINUE TO UPLOAD
+                                                            BECOME A VALIDATOR
                                                         </Button>
                                                     </Colxx>
                                                 </Row>

@@ -2,17 +2,17 @@ import { ThemeColors } from '../helpers/ThemeColors'
 const colors = ThemeColors()
 
 export const lineChartData = {
-  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
   datasets: [
     {
       label: '',
-      data: [54, 63, 60, 65, 60, 68, 60],
+      data: [11, 8, 7, 6, 5.5, 5, 4.5, 4.2, 4.1, 4],
       borderColor: colors.themeColor1,
       pointBackgroundColor: colors.foregroundColor,
       pointBorderColor: colors.themeColor1,
       pointHoverBackgroundColor: colors.themeColor1,
       pointHoverBorderColor: colors.foregroundColor,
-      pointRadius: 6,
+      pointRadius: 3,
       pointBorderWidth: 2,
       pointHoverRadius: 8,
       fill: false

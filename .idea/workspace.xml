@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/charts/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/charts/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/charts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/overview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="101" column="84" selection-start-line="101" selection-start-column="84" selection-end-line="101" selection-end-column="84" />
+            <state relative-caret-position="120">
+              <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -30,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="28">
+              <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -54,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/connect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1302">
-              <caret line="138" column="65" selection-start-line="138" selection-start-column="65" selection-end-line="138" selection-end-column="65" />
+            <state relative-caret-position="214">
+              <caret line="134" column="65" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="65" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -83,6 +87,33 @@
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/charts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/charts/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="8658" column="21" selection-start-line="8658" selection-start-column="21" selection-end-line="8658" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -127,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/containers/form-validations/checkboxapa.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/step2.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/steptwo.js" />
-        <option value="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/_mixins.scss" />
         <option value="$PROJECT_DIR$/src/containers/forms/DropzoneExample.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/default.js" />
@@ -139,7 +169,11 @@
         <option value="$PROJECT_DIR$/src/views/app/dashboards/pos.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/index.js" />
         <option value="$PROJECT_DIR$/src/views/index.js" />
+        <option value="$PROJECT_DIR$/src/components/charts/config.js" />
+        <option value="$PROJECT_DIR$/src/data/charts.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/vendor/bootstrap.rtl.only.min.css" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/overview.js" />
+        <option value="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" />
       </list>
     </option>
   </component>
@@ -170,7 +204,35 @@
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="charts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
@@ -191,7 +253,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboards" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,12 +319,12 @@
       <workItem from="1584444357627" duration="94000" />
       <workItem from="1584444512433" duration="478000" />
       <workItem from="1584445157547" duration="10045000" />
-      <workItem from="1584956752372" duration="30591000" />
+      <workItem from="1584956752372" duration="34654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45755000" />
+    <option name="totallyTimeSpent" value="49818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -273,8 +344,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25577265" />
-      <window_info anchor="bottom" id="Floobits" order="11" weight="0.30373" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25577265" />
+      <window_info anchor="bottom" id="Floobits" order="11" visible="true" weight="0.30373" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -411,18 +482,6 @@
     <entry file="file://$PROJECT_DIR$/src/data/iconCards.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="8647" column="3" selection-start-line="8647" selection-start-column="3" selection-end-line="8647" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/vendor/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28430" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/icons.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2395">
@@ -494,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/connect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="138" column="65" selection-start-line="138" selection-start-column="65" selection-end-line="138" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/ui/components/input-groups.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -530,16 +579,6 @@
           <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -574,23 +613,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/vendor/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28403" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/ui/components/charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3892">
+          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/charts/Line.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/charts/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1031" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="28">
+          <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="134" column="65" selection-start-line="134" selection-start-column="59" selection-end-line="134" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/vendor/bootstrap.rtl.only.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="1427" column="1" selection-start-line="1427" selection-start-column="1" selection-end-line="1427" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/charts/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/overview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="101" column="84" selection-start-line="101" selection-start-column="84" selection-end-line="101" selection-end-column="84" />
+        <state relative-caret-position="120">
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="8658" column="21" selection-start-line="8658" selection-start-column="21" selection-end-line="8658" selection-end-column="21" />
         </state>
       </provider>
     </entry>
