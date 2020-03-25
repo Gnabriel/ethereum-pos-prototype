@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/generate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/generate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,7 +16,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/overview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2128">
+            <state relative-caret-position="2363">
               <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
             </state>
           </provider>
@@ -35,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -83,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -252,15 +243,15 @@
       <workItem from="1584444357627" duration="94000" />
       <workItem from="1584444512433" duration="478000" />
       <workItem from="1584445157547" duration="10045000" />
-      <workItem from="1584956752372" duration="29081000" />
+      <workItem from="1584956752372" duration="29213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44245000" />
+    <option name="totallyTimeSpent" value="44377000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18124007" />
@@ -541,7 +532,7 @@
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -581,7 +572,7 @@
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/generate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -590,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/overview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2128">
+        <state relative-caret-position="2363">
           <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
         </state>
       </provider>
