@@ -53,22 +53,25 @@ class GenerateDashboard extends Component {
                             aria-label="Page navigation example"
                             listClassName="justify-content-center"
                         >
-                            <PaginationItem disabled>
-                                <PaginationLink className="prev" href="#">
+                            <PaginationItem >
+                                <PaginationLink className="prev" href="overview">
                                     <i className="simple-icon-arrow-left"/>
                                 </PaginationLink>
                             </PaginationItem>
+                            <PaginationItem >
+                                <PaginationLink href="overview">1</PaginationLink>
+                            </PaginationItem>
                             <PaginationItem active>
-                                <PaginationLink href="#">1</PaginationLink>
+                                <PaginationLink href="#">2</PaginationLink>
                             </PaginationItem>
                             <PaginationItem disabled>
-                                <PaginationLink href="upload">2</PaginationLink>
+                                <PaginationLink href="upload">3</PaginationLink>
                             </PaginationItem>
                             <PaginationItem disabled>
-                                <PaginationLink href="connect">3</PaginationLink>
+                                <PaginationLink href="connect">4</PaginationLink>
                             </PaginationItem>
                             <PaginationItem disabled>
-                                <PaginationLink href="summary">4</PaginationLink>
+                                <PaginationLink href="summary">5</PaginationLink>
                             </PaginationItem>
                             {/*
                             <PaginationItem disabled>

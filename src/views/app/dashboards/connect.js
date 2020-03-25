@@ -65,16 +65,19 @@ class ConnectDashboard extends Component {
                                 </PaginationLink>
                             </PaginationItem>
                             <PaginationItem>
-                                <PaginationLink href="generate">1</PaginationLink>
+                                <PaginationLink href="overview">1</PaginationLink>
                             </PaginationItem>
                             <PaginationItem>
-                                <PaginationLink href="upload">2</PaginationLink>
+                                <PaginationLink href="generate">2</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="upload">3</PaginationLink>
                             </PaginationItem>
                             <PaginationItem active>
-                                <PaginationLink href="#">3</PaginationLink>
+                                <PaginationLink href="#">4</PaginationLink>
                             </PaginationItem>
                             <PaginationItem disabled>
-                                <PaginationLink href="summary">4</PaginationLink>
+                                <PaginationLink href="summary">5</PaginationLink>
                             </PaginationItem>
                             {/*
                             <PaginationItem disabled>

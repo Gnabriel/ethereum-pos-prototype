@@ -62,16 +62,19 @@ class SummaryDashboard extends Component {
                                 </PaginationLink>
                             </PaginationItem>
                             <PaginationItem>
-                                <PaginationLink href="generate">1</PaginationLink>
+                                <PaginationLink href="overview">1</PaginationLink>
                             </PaginationItem>
                             <PaginationItem>
-                                <PaginationLink href="upload">2</PaginationLink>
+                                <PaginationLink href="generate">2</PaginationLink>
                             </PaginationItem>
                             <PaginationItem>
-                                <PaginationLink href="connect">3</PaginationLink>
+                                <PaginationLink href="upload">3</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="connect">4</PaginationLink>
                             </PaginationItem>
                             <PaginationItem active>
-                                <PaginationLink href="#">4</PaginationLink>
+                                <PaginationLink href="#">5</PaginationLink>
                             </PaginationItem>
                             {/*
                             <PaginationItem disabled>
