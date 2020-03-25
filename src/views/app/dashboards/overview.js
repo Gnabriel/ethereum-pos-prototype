@@ -22,6 +22,8 @@ import {Link} from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import * as ReactDOM from "react-dom";
 import EthereumHeader from "../img/ethereum-pos.jpg"
+import EthereumBar from "../img/chart2.png"
+import EthereumGraph from "../img/chart1.png"
 import CardImg from "reactstrap/es/CardImg";
 import LineChart from "../../../components/charts/Line";
 import {lineChartData} from "../../../data/charts";
