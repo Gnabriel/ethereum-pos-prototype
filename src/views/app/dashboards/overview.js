@@ -21,7 +21,8 @@ import * as Yup from "yup";
 import {Link} from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import * as ReactDOM from "react-dom";
-import EthereumHeader from "/img/ethereum-pos.jpg"
+import EthereumHeader from "../img/ethereum-pos.jpg"
+import CardImg from "reactstrap/es/CardImg";
 
 const SignupSchema = Yup.object().shape({
     checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to something")
@@ -98,8 +99,8 @@ class OverviewDashboard extends Component {
                 <Row>
                     <Colxx>
                         <Card className="mb-4">
+                            <CardImg variant="top" src={EthereumHeader} height="1000"/>
                             <CardBody>
-                                <img src={EthereumHeader} alt="Ethereum POS"/>
                             </CardBody>
                         </Card>
                     </Colxx>
