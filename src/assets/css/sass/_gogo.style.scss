@@ -8652,10 +8652,15 @@ i.large-icon {
 #ethereum-header-card {
 }
 
-#ethereum-header {
+.ethereum-chart {
+  position: relative;
+  width: 60%;
+  left: 20%;
+  margin-bottom: 5vw;
 }
 
-#vertical-text {
-  position: absolute;
-  transform: rotate(-90deg);
+.div-centered {
+  text-align: left;
+  margin: auto;
+  width: 60%;
 }

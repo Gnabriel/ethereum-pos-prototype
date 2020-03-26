@@ -19,16 +19,18 @@ import {Form, Formik} from "formik";
 import {FormikCustomCheckbox} from "../../../containers/form-validations/FormikFields";
 import * as Yup from "yup";
 import {Link} from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import * as ReactDOM from "react-dom";
 import EthereumHeader from "../img/ethereum-pos.jpg"
 import EthereumBar from "../img/chart2.png"
 import EthereumGraph from "../img/chart1.png"
+import EthereumHeader2 from "../img/ethereum-pos2.png"
 import CardImg from "reactstrap/es/CardImg";
 import LineChart from "../../../components/charts/Line";
 import {lineChartData} from "../../../data/charts";
-
-
+import GenerateKeys from "../img/generate-keys.jpg"
+import Careful from "../img/careful.jpg"
+import Deposit from "../img/deposit.jpg"
 
 
 const SignupSchema = Yup.object().shape({
@@ -43,7 +45,7 @@ class OverviewDashboard extends Component {
     }
 
     handleSubmit = (values, {setSubmitting}) => {
-        window.location.href='/app/dashboards/generate';
+        window.location.href = '/app/dashboards/generate';
 
         setTimeout(() => {
             setSubmitting(false);
@@ -105,23 +107,123 @@ class OverviewDashboard extends Component {
 
                 <Row>
                     <Colxx>
-                        <Card id="ethereum-header-card" className="mb-4">
-                            <CardImg id="ethereum-header" class="mw-20" variant="top" src={EthereumHeader} />
+                        <Card id="ethereum-header-card">
+                            <img id="ethereum-header" class="mw-20" variant="top" src={EthereumHeader2}/>
 
-                            <Row>
-                                <Colxx>
-                                    <span id="vertical-text">VALIDATOR ISSUANCE (APR)</span>
-                                </Colxx>
+                            <CardBody>
 
-                                <Colxx xxs="12" lg="6" className="mb-5">
-                                    <CardSubtitle>
-                                        Hejhej
-                                    </CardSubtitle>
-                                    <div className="chart-container">
-                                        <LineChart shadow data={lineChartData} />
-                                    </div>
-                                </Colxx>
-                            </Row>
+                                {/* LineChart
+                                <Row>
+                                    <Colxx xxs="12" lg="6" className="mb-5">
+                                        <CardSubtitle>
+                                            Hejhej
+                                        </CardSubtitle>
+                                        <div className="chart-container">
+                                            <LineChart shadow data={lineChartData} />
+                                        </div>
+                                    </Colxx>
+                                </Row>
+                                */}
+
+                                {/* EthereumBar */}
+                                <div className="div-centered">
+                                    <h2>Network status</h2>
+                                    <p>
+                                        <b>12,512 ETH</b> in the network and counting<br/>
+                                        The eth2 network need to reach at least <b>524,288 ETH</b> (16,284 validators)
+                                        to launch its mainnet.
+                                    </p>
+                                </div>
+
+                                <img class="ethereum-chart" src={EthereumBar} alt="Ethereum Bar" width="700"/>
+
+                                {/* EthereumChart */}
+                                <div className="div-centered">
+                                    <h2>Staking and rewards</h2>
+                                    <p>
+                                        Once the mainnet has launched, validators get rewarded for attesting and
+                                        proposing blocks.<br/>
+                                        The rewards are tied to the overall amount of ETH staked in the network.
+                                    </p>
+                                </div>
+
+                                <img class="ethereum-chart" src={EthereumGraph} alt="Ethereum Graph" width="700"/>
+
+                                {/* Warnings */}
+                                <div className="div-centered">
+                                    <h2>Precautions</h2>
+                                    <p>
+                                        You are about to become a validator of the Ethereum network. Each validation
+                                        requires a staking of 32 ETH.<br/>
+                                        <br/>
+                                        Due to the risk of phishing please follow these precautions:<br/>
+
+                                        1. To make sure that you are using the official staking website by Etherum
+                                        Foundation, manually write the url and reload this page.
+                                        <br/>
+                                        2. Do not copy/paste a wallet address. You should always manually write it.
+                                    </p>
+                                </div>
+
+                                {/* 3 easy steps */}
+
+                                {/* Checkbox */}
+                                <div className="div-centered">
+                                    <Formik
+                                        initialValues={{
+                                            checkboxCustomSingle: false
+                                        }}
+                                        validationSchema={SignupSchema}
+                                        onSubmit={this.handleSubmit}>
+                                        {({
+                                              handleSubmit,
+                                              setFieldValue,
+                                              setFieldTouched,
+                                              handleChange,
+                                              handleBlur,
+                                              values,
+                                              errors,
+                                              touched,
+                                              isSubmitting
+                                          }) => (
+                                            <Form className="av-tooltip tooltip-label-right">
+                                                <FormGroup className="error-l-150">
+                                                    <FormikCustomCheckbox
+                                                        name="checkboxCustomSingle"
+                                                        className="form-control"
+                                                        value={values.checkboxCustomSingle}
+                                                        label="I have read and understand the precautions"
+                                                        onChange={setFieldValue}
+                                                        onBlur={setFieldTouched}
+                                                    />
+                                                    {errors.checkboxCustomSingle &&
+                                                    touched.checkboxCustomSingle ? (
+                                                        <div className="invalid-feedback d-block">
+                                                            {errors.checkboxCustomSingle}
+                                                        </div>
+                                                    ) : null}
+                                                </FormGroup>
+
+                                                {/* Next step button */}
+                                                <div style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                }}>
+                                                    <Row>
+                                                        <Colxx>
+                                                            <Button color="primary" type="submit" size="lg"
+                                                                    className="mb-2">
+                                                                BECOME A VALIDATOR
+                                                            </Button>
+                                                        </Colxx>
+                                                    </Row>
+                                                </div>
+                                            </Form>
+                                        )}
+                                    </Formik>
+                                </div>
+                            </CardBody>
                         </Card>
                     </Colxx>
                 </Row>
@@ -130,68 +232,7 @@ class OverviewDashboard extends Component {
                 <Row>
                     <Colxx>
                         <Card className="mb-4">
-                            <CardBody>
-                                You are about to become a validator of the ethereum network.
-                                Each validation requires a staking of 32 Ether(the Ethereum currency).
-                                You are allowed to make up to 5 validations.
-                                Due to the risk of phishing please follow these precautions:
-                                1.To make sure you are using the right url, manually write the url and reload the page.
-                                2. Never copy/paste an wallet adress. You should always manually write it.
 
-                                <Formik
-                                    initialValues={{
-                                        checkboxCustomSingle: false
-                                    }}
-                                    validationSchema={SignupSchema}
-                                    onSubmit={this.handleSubmit}>
-                                    {({
-                                          handleSubmit,
-                                          setFieldValue,
-                                          setFieldTouched,
-                                          handleChange,
-                                          handleBlur,
-                                          values,
-                                          errors,
-                                          touched,
-                                          isSubmitting
-                                      }) => (
-                                        <Form className="av-tooltip tooltip-label-right">
-                                            <FormGroup className="error-l-150">
-                                                <FormikCustomCheckbox
-                                                    name="checkboxCustomSingle"
-                                                    className="form-control"
-                                                    value={values.checkboxCustomSingle}
-                                                    label="I have read and understand the precautions"
-                                                    onChange={setFieldValue}
-                                                    onBlur={setFieldTouched}
-                                                />
-                                                {errors.checkboxCustomSingle &&
-                                                touched.checkboxCustomSingle ? (
-                                                    <div className="invalid-feedback d-block">
-                                                        {errors.checkboxCustomSingle}
-                                                    </div>
-                                                ) : null}
-                                            </FormGroup>
-
-                                            {/* Next step button */}
-                                            <div style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                            }}>
-                                                <Row>
-                                                    <Colxx>
-                                                        <Button color="primary" type="submit" size="lg"
-                                                                className="mb-2" >
-                                                            BECOME A VALIDATOR
-                                                        </Button>
-                                                    </Colxx>
-                                                </Row>
-                                            </div>
-                                        </Form>
-                                    )}
-                                </Formik>
-                            </CardBody>
                         </Card>
                     </Colxx>
                 </Row>
