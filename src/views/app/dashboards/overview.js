@@ -221,7 +221,7 @@ class OverviewDashboard extends Component {
                                                 </FormGroup>
 
                                                 {/* 3 easy steps */}
-                                                <Row class="bg-secondary">
+                                                <Row class="bg-primary">
                                                     <Colxx>
                                                         <img className="small-pics" src={Careful} alt="Careful"
                                                              width="90%"/>

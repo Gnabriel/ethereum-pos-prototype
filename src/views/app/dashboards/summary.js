@@ -22,11 +22,11 @@ import * as Yup from "yup";
 import { iconsmind, simplelineicons } from "../../../data/icons";
 
 
+
 const SignupSchema = Yup.object().shape({
     checkboxCustomSingle1: Yup.bool().oneOf([true], "Must agree to this"),
     checkboxCustomSingle2: Yup.bool().oneOf([true], "Must agree to this"),
     checkboxCustomSingle3: Yup.bool().oneOf([true], "Must agree to this"),
-    checkboxCustomSingle4: Yup.bool().oneOf([true], "Must agree to this"),
 });
 
 
@@ -37,7 +37,7 @@ class SummaryDashboard extends Component {
     }
 
     handleSubmit = (values, {setSubmitting}) => {
-        window.location.href='/app/dashboards/summary';
+        window.location.href='/app/dashboards/success';
 
         setTimeout(() => {
             setSubmitting(false);
@@ -129,6 +129,7 @@ class SummaryDashboard extends Component {
                 </Row>
 
                 {/* Keys */}
+                {/*
                 <Row>
                     <Colxx>
                         <Card className="mb-4">
@@ -151,6 +152,7 @@ class SummaryDashboard extends Component {
                         </Card>
                     </Colxx>
                 </Row>
+                */}
 
                 {/* Alert Friction */}
                 <Row>
@@ -162,7 +164,7 @@ class SummaryDashboard extends Component {
                                         checkboxCustomSingle1: false,
                                         checkboxCustomSingle2: false,
                                         checkboxCustomSingle3: false,
-                                        checkboxCustomSingle4: false
+
                                     }}
                                     validationSchema={SignupSchema}
                                     onSubmit={this.handleSubmit}>
@@ -190,8 +192,8 @@ class SummaryDashboard extends Component {
                                                     name="checkboxCustomSingle1"
                                                     className="form-control"
                                                     value={values.checkboxCustomSingle1}
-                                                    label="I understand that if I lose my mnemonic phrase I won't be
-                                                    able to withdraw my funds"
+                                                    label="I understand that if I lose my private key I won't be
+                                                    able to withdraw my funds."
                                                     onChange={setFieldValue}
                                                     onBlur={setFieldTouched}
                                                 />
@@ -208,7 +210,7 @@ class SummaryDashboard extends Component {
                                                     name="checkboxCustomSingle2"
                                                     className="form-control"
                                                     value={values.checkboxCustomSingle2}
-                                                    label="I am aware of the early adopter and slashing risks"
+                                                    label="I am aware of the early adopter and slashing risks."
                                                     onChange={setFieldValue}
                                                     onBlur={setFieldTouched}
                                                 />
@@ -225,7 +227,7 @@ class SummaryDashboard extends Component {
                                                     name="checkboxCustomSingle3"
                                                     className="form-control"
                                                     value={values.checkboxCustomSingle3}
-                                                    label="I am aware that this transaction is not reversible"
+                                                    label="I am aware that this transaction is not reversible."
                                                     onChange={setFieldValue}
                                                     onBlur={setFieldTouched}
                                                 />
@@ -233,38 +235,6 @@ class SummaryDashboard extends Component {
                                                 touched.checkboxCustomSingle3 ? (
                                                     <div className="invalid-feedback d-block">
                                                         {errors.checkboxCustomSingle3}
-                                                    </div>
-                                                ) : null}
-                                            </FormGroup>
-
-                                            <Alert color="danger">
-                                                <Row>
-                                                    <div className={"glyph-icon simple-icon-exclamation"} />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;Please make sure you are not being phished!
-                                                </Row>
-                                            </Alert>
-
-                                            <span>You are responsible for the transaction. Fraudulent websites might
-                                                lure u into sending the 32 ETH to them instead of the official deposit
-                                                contract. Please check that the address you are sending the transaction
-                                                to is the correct address. Learn here how to do it safely ->
-                                                <br/>
-                                                <br/>
-                                            </span>
-
-                                            <FormGroup className="error-l-150">
-                                                <FormikCustomCheckbox
-                                                    name="checkboxCustomSingle4"
-                                                    className="form-control"
-                                                    value={values.checkboxCustomSingle4}
-                                                    label="I know how to check that I am sending my ETH into the correct deposit contract and I will do so."
-                                                    onChange={setFieldValue}
-                                                    onBlur={setFieldTouched}
-                                                />
-                                                {errors.checkboxCustomSingle4 &&
-                                                touched.checkboxCustomSingle4 ? (
-                                                    <div className="invalid-feedback d-block">
-                                                        {errors.checkboxCustomSingle4}
                                                     </div>
                                                 ) : null}
                                             </FormGroup>

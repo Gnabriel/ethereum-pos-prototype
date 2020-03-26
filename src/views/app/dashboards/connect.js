@@ -23,7 +23,11 @@ import {iconsmind, simplelineicons} from "../../../data/icons";
 import DropzoneExample from "../../../containers/forms/DropzoneExample";
 import {Link} from "react-router-dom";
 import MinNumber from "../../../containers/form-validations/AvailityCustom";
-import {AvForm, AvField, AvGroup} from "availity-reactstrap-validation";
+import {AvForm, AvField, AvGroup, AvCheckbox, AvCheckboxGroup} from "availity-reactstrap-validation";
+
+const SignupSchema = Yup.object().shape({
+    checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to this"),
+});
 
 
 class ConnectDashboard extends Component {
@@ -33,8 +37,6 @@ class ConnectDashboard extends Component {
     }
 
     handleSubmit(event, errors, values) {
-        console.log(errors);
-        console.log(values);
         if (errors.length === 0) {
             window.location.href = '/app/dashboards/summary';
         }
@@ -101,6 +103,7 @@ class ConnectDashboard extends Component {
                                 <AvForm
                                     className="av-tooltip tooltip-label-right"
                                     onSubmit={this.handleSubmit}>
+
                                     {/* Wallet address */}
                                     <Row>
                                         <Colxx>
@@ -162,6 +165,34 @@ class ConnectDashboard extends Component {
                                         </Colxx>
                                     </Row>
 
+
+                                    <Alert color="danger" style={{marginTop: 50}}>
+                                        <Row>
+                                            <div className={"glyph-icon simple-icon-exclamation"}/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;Please make sure you are not being
+                                            phished!
+                                        </Row>
+                                    </Alert>
+
+                                    <span>
+                                        You are responsible for the transaction. Fraudulent websites might
+                                        lure you into sending the Ether to them instead of the official deposit
+                                        contract. Please check that the address you are sending the transaction
+                                        to is the correct address.
+                                        <br/>
+                                        <br/>
+                                    </span>
+
+
+                                    <AvCheckboxGroup
+                                        className="error-l-150"
+                                        inline
+                                        name="checkboxCustomInputExample2"
+                                        required>
+                                        <AvCheckbox customInput label="I have confirmed that I am sending Ether to
+                                        the correct address." value="Yes"/>
+                                    </AvCheckboxGroup>
+
                                     {/* Next step button */}
                                     <div style={{
                                         display: 'flex',
@@ -170,10 +201,8 @@ class ConnectDashboard extends Component {
                                     }}>
                                         <Row>
                                             <Colxx>
-                                                <Button color="primary"
-                                                        size="lg"
-                                                        className="mb-2"
-                                                        type="submit">
+                                                <Button color="primary" type="submit" size="lg"
+                                                        className="mb-2">
                                                     CONTINUE TO SUMMARY
                                                 </Button>
                                             </Colxx>

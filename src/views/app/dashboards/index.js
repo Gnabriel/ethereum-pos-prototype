@@ -25,6 +25,9 @@ const ConnectDefault = React.lazy(() =>
 const OverviewDefault = React.lazy(() =>
     import(/* webpackChunkName: "dashboard-overview" */ './overview')
 );
+const SuccessDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-success" */ './success')
+);
 
 
 const Dashboards = ({ match }) => (
@@ -62,6 +65,10 @@ const Dashboards = ({ match }) => (
       <Route
           path={`${match.url}/overview`}
           render={props => <OverviewDefault {...props} />}
+      />
+      <Route
+          path={`${match.url}/success`}
+          render={props => <SuccessDefault {...props} />}
       />
       <Redirect to="/error" />
     </Switch>
