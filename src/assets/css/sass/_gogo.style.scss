@@ -8649,7 +8649,8 @@ i.large-icon {
 }
 
 
-#ethereum-header-card {
+#ethereum-header {
+  object-fit: cover;
 }
 
 .ethereum-chart {
@@ -8663,4 +8664,9 @@ i.large-icon {
   text-align: left;
   margin: auto;
   width: 60%;
+}
+
+.small-pics {
+  margin-top: 5vw;
+  margin-bottom: 2vw;
 }

@@ -107,7 +107,7 @@ class OverviewDashboard extends Component {
 
                 <Row>
                     <Colxx>
-                        <Card id="ethereum-header-card">
+                        <Card>
                             <img id="ethereum-header" class="mw-20" variant="top" src={EthereumHeader2}/>
 
                             <CardBody>
@@ -165,8 +165,6 @@ class OverviewDashboard extends Component {
                                     </p>
                                 </div>
 
-                                {/* 3 easy steps */}
-
                                 {/* Checkbox */}
                                 <div className="div-centered">
                                     <Formik
@@ -204,6 +202,36 @@ class OverviewDashboard extends Component {
                                                     ) : null}
                                                 </FormGroup>
 
+                                                {/* 3 easy steps */}
+                                                <Row>
+                                                    <Colxx>
+                                                        <img className="small-pics" src={Careful} alt="Careful" width="90%"/>
+                                                        <p>
+                                                            <b>Be careful muddafukka</b><br/>
+                                                            The new eth2 network can only work successfully if
+                                                            validators understand their responsibilities and risks.
+                                                        </p>
+                                                    </Colxx>
+
+                                                    <Colxx>
+                                                        <img className="small-pics" src={GenerateKeys} alt="Ethereum Bar" width="90%"/>
+                                                        <p>
+                                                            <b>Generate validator keys offline</b><br/>
+                                                            In order to register on the beacon chain you need to
+                                                            registera keypair and upload the public key.
+                                                        </p>
+                                                    </Colxx>
+
+                                                    <Colxx>
+                                                        <img className="small-pics" src={Deposit} alt="Ethereum Bar" width="90%"/>
+                                                        <p>
+                                                            <b>Deposit ETH in exchange for bETH</b><br/>
+                                                            After depositing 32 ETH per validator you receive 32 bETH
+                                                            and become an important part of the network!
+                                                        </p>
+                                                    </Colxx>
+                                                </Row>
+
                                                 {/* Next step button */}
                                                 <div style={{
                                                     display: 'flex',
@@ -223,19 +251,13 @@ class OverviewDashboard extends Component {
                                         )}
                                     </Formik>
                                 </div>
+
+
                             </CardBody>
                         </Card>
                     </Colxx>
                 </Row>
 
-                {/* Validation */}
-                <Row>
-                    <Colxx>
-                        <Card className="mb-4">
-
-                        </Card>
-                    </Colxx>
-                </Row>
             </Fragment>
         );
     }
