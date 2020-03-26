@@ -23,10 +23,10 @@ import { iconsmind, simplelineicons } from "../../../data/icons";
 
 
 const SignupSchema = Yup.object().shape({
-    checkboxCustomSingle1: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle2: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle3: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle4: Yup.bool().oneOf([true], "Must agree to something"),
+    checkboxCustomSingle1: Yup.bool().oneOf([true], "Must agree to this"),
+    checkboxCustomSingle2: Yup.bool().oneOf([true], "Must agree to this"),
+    checkboxCustomSingle3: Yup.bool().oneOf([true], "Must agree to this"),
+    checkboxCustomSingle4: Yup.bool().oneOf([true], "Must agree to this"),
 });
 
 

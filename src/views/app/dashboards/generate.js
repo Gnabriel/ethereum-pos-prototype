@@ -23,7 +23,7 @@ import { NavLink } from "react-router-dom";
 import * as ReactDOM from "react-dom";
 
 const SignupSchema = Yup.object().shape({
-    checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to something")
+    checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to this")
 });
 
 

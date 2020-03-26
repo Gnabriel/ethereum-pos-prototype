@@ -516,3 +516,5 @@ export default class ModalUi extends Component {
     );
   }
 }
+
+//export const modalobj = new ModalUi();

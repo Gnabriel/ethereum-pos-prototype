@@ -6,7 +6,7 @@ import {
     CardBody, CardSubtitle,
     CardTitle, CustomInput, FormGroup, Input,
     InputGroup,
-    InputGroupAddon, Label,
+    InputGroupAddon, Label, Modal, ModalBody, ModalFooter, ModalHeader,
     Pagination,
     PaginationItem,
     PaginationLink,
@@ -21,35 +21,53 @@ import * as Yup from "yup";
 import {Link} from "react-router-dom";
 import {NavLink} from "react-router-dom";
 import * as ReactDOM from "react-dom";
-import EthereumHeader from "../img/ethereum-pos.jpg"
-import EthereumBar from "../img/chart2.png"
-import EthereumGraph from "../img/chart1.png"
-import EthereumHeader2 from "../img/ethereum-pos2.png"
+import EthereumHeader from "../img/ethereum-pos.jpg";
+import EthereumBar from "../img/chart2.png";
+import EthereumGraph from "../img/chart1.png";
+import EthereumHeader2 from "../img/ethereum-pos2.png";
 import CardImg from "reactstrap/es/CardImg";
 import LineChart from "../../../components/charts/Line";
 import {lineChartData} from "../../../data/charts";
-import GenerateKeys from "../img/generate-keys.jpg"
-import Careful from "../img/careful.jpg"
-import Deposit from "../img/deposit.jpg"
-
+import GenerateKeys from "../img/generate-keys.jpg";
+import Careful from "../img/careful.jpg";
+import Deposit from "../img/deposit.jpg";
+import ModalUi from "../ui/components/modal";
 
 const SignupSchema = Yup.object().shape({
-    checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to something")
+    checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to this")
 });
-
 
 class OverviewDashboard extends Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.state = {
+            modal: false,
+            modalRight: false,
+            modalLarge: false,
+            modalSmall: false,
+            modalLong: false,
+            modalBack: false,
+            backdrop: true
+        };
     }
 
+    toggle = () => {
+        this.setState(prevState => ({
+            modal: !prevState.modal
+        }));
+    };
+
     handleSubmit = (values, {setSubmitting}) => {
-        window.location.href = '/app/dashboards/generate';
+        this.toggle();
 
         setTimeout(() => {
             setSubmitting(false);
         }, 1000);
+    };
+
+    changePage = () => {
+        window.location.href = '/app/dashboards/generate';
     };
 
     render() {
@@ -99,7 +117,7 @@ class OverviewDashboard extends Component {
                 <Row>
                     <Colxx xxs="12">
                         <h2>
-                            Become a validator and help secure the eth2 network.
+                            Overview
                         </h2>
                         <Separator className="mb-5"/>
                     </Colxx>
@@ -203,27 +221,30 @@ class OverviewDashboard extends Component {
                                                 </FormGroup>
 
                                                 {/* 3 easy steps */}
-                                                <Row>
+                                                <Row class="bg-secondary">
                                                     <Colxx>
-                                                        <img className="small-pics" src={Careful} alt="Careful" width="90%"/>
+                                                        <img className="small-pics" src={Careful} alt="Careful"
+                                                             width="90%"/>
                                                         <p>
-                                                            <b>Be careful muddafukka</b><br/>
+                                                            <b>Proceed with caution</b><br/>
                                                             The new eth2 network can only work successfully if
                                                             validators understand their responsibilities and risks.
                                                         </p>
                                                     </Colxx>
 
                                                     <Colxx>
-                                                        <img className="small-pics" src={GenerateKeys} alt="Ethereum Bar" width="90%"/>
+                                                        <img className="small-pics" src={GenerateKeys}
+                                                             alt="Ethereum Bar" width="90%"/>
                                                         <p>
                                                             <b>Generate validator keys offline</b><br/>
-                                                            In order to register on the beacon chain you need to
-                                                            registera keypair and upload the public key.
+                                                            In order to register on the blockchain you need to
+                                                            register a keypair and upload the public key.
                                                         </p>
                                                     </Colxx>
 
                                                     <Colxx>
-                                                        <img className="small-pics" src={Deposit} alt="Ethereum Bar" width="90%"/>
+                                                        <img className="small-pics" src={Deposit} alt="Ethereum Bar"
+                                                             width="90%"/>
                                                         <p>
                                                             <b>Deposit ETH in exchange for bETH</b><br/>
                                                             After depositing 32 ETH per validator you receive 32 bETH
@@ -232,20 +253,37 @@ class OverviewDashboard extends Component {
                                                     </Colxx>
                                                 </Row>
 
+
                                                 {/* Next step button */}
                                                 <div style={{
+                                                    margin: '2vw',
                                                     display: 'flex',
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
                                                 }}>
-                                                    <Row>
-                                                        <Colxx>
-                                                            <Button color="primary" type="submit" size="lg"
-                                                                    className="mb-2">
-                                                                BECOME A VALIDATOR
+                                                    <Button color="primary" type="submit">
+                                                        Become a validator
+                                                    </Button>
+                                                    <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                                                        <ModalHeader toggle={this.toggle}>
+                                                            Caution
+                                                        </ModalHeader>
+                                                        <ModalBody>
+                                                            Before you proceed, are you sure that you are using the
+                                                            official staking website by
+                                                            Etherum Foundation?
+                                                        </ModalBody>
+                                                        <ModalFooter>
+                                                            <Button color="primary"
+                                                                    onClick={this.changePage}>
+                                                                I have manually entered the URL to this website
                                                             </Button>
-                                                        </Colxx>
-                                                    </Row>
+                                                            {" "}
+                                                            <Button color="secondary" onClick={this.toggle}>
+                                                                Cancel
+                                                            </Button>
+                                                        </ModalFooter>
+                                                    </Modal>
                                                 </div>
                                             </Form>
                                         )}

@@ -24,14 +24,6 @@ import DropzoneExample from "../../../containers/forms/DropzoneExample";
 import {Link} from 'react-router-dom'
 
 
-const SignupSchema = Yup.object().shape({
-    checkboxCustomSingle1: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle2: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle3: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle4: Yup.bool().oneOf([true], "Must agree to something"),
-});
-
-
 class UploadDashboard extends Component {
     constructor(props) {
         super(props);

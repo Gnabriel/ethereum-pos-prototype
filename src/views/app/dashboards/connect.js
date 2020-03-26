@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import { injectIntl } from 'react-intl';
+import React, {Component, Fragment} from 'react';
+import {injectIntl} from 'react-intl';
 import {
     Alert,
     Button,
@@ -13,24 +13,17 @@ import {
     PaginationLink,
     Row
 } from 'reactstrap';
-import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
+import {Colxx, Separator} from '../../../components/common/CustomBootstrap';
 import IntlMessages from "../../../helpers/IntlMessages";
 import CardText from "reactstrap/es/CardText";
 import {Form, Formik} from "formik";
 import {FormikCustomCheckbox} from "../../../containers/form-validations/FormikFields";
 import * as Yup from "yup";
-import { iconsmind, simplelineicons } from "../../../data/icons";
+import {iconsmind, simplelineicons} from "../../../data/icons";
 import DropzoneExample from "../../../containers/forms/DropzoneExample";
 import {Link} from "react-router-dom";
 import MinNumber from "../../../containers/form-validations/AvailityCustom";
-import { AvForm, AvField, AvGroup } from "availity-reactstrap-validation";
-
-const SignupSchema = Yup.object().shape({
-    checkboxCustomSingle1: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle2: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle3: Yup.bool().oneOf([true], "Must agree to something"),
-    checkboxCustomSingle4: Yup.bool().oneOf([true], "Must agree to something"),
-});
+import {AvForm, AvField, AvGroup} from "availity-reactstrap-validation";
 
 
 class ConnectDashboard extends Component {
@@ -43,12 +36,12 @@ class ConnectDashboard extends Component {
         console.log(errors);
         console.log(values);
         if (errors.length === 0) {
-            window.location.href='/app/dashboards/summary';
+            window.location.href = '/app/dashboards/summary';
         }
     };
 
     render() {
-        const { messages } = this.props.intl;
+        const {messages} = this.props.intl;
         return (
             <Fragment>
                 {/* Page Navigation */}
@@ -114,7 +107,8 @@ class ConnectDashboard extends Component {
                                             <CardTitle>
                                                 1. Enter receiving wallet address
                                             </CardTitle>
-                                            <p>To install Git and Python type the following in the terminal window:</p>
+                                            <p>Enter the receiving wallet adress here. Do not copy/paste
+                                                the link.</p>
                                             <InputGroup className="mb-3">
                                                 <Input/>
                                             </InputGroup>
@@ -128,26 +122,26 @@ class ConnectDashboard extends Component {
                                                 2. Enter amount of Ether
                                             </CardTitle>
 
+                                            <Label>Enter the amount of ether you would like to transfer. It should
+                                                be 32 times the amount of validations.</Label>
                                             <AvGroup className="error-t-negative">
-                                                <Label>Bla bla bla lägg in ether.</Label>
-
                                                 <Row>
                                                     <Colxx xs={1}>
                                                         <InputGroupAddon addonType="prepend">ETH</InputGroupAddon>
                                                     </Colxx>
 
                                                     <Colxx xs={11}>
-                                                    <AvField
-                                                        name="minPropNumberProp"
-                                                        type="text"
-                                                        validate={{
-                                                            min: { value: 32, errorMessage: "Minimum 32 ETH" },
-                                                            required: {
-                                                                value: true,
-                                                                errorMessage: "Please enter a number"
-                                                            }
-                                                        }}
-                                                    />
+                                                        <AvField
+                                                            name="minPropNumberProp"
+                                                            type="text"
+                                                            validate={{
+                                                                min: {value: 32, errorMessage: "Minimum 32 ETH"},
+                                                                required: {
+                                                                    value: true,
+                                                                    errorMessage: "Please enter a number"
+                                                                }
+                                                            }}
+                                                        />
                                                     </Colxx>
                                                 </Row>
                                             </AvGroup>
@@ -160,7 +154,8 @@ class ConnectDashboard extends Component {
                                             <CardTitle>
                                                 3. Enter your private key
                                             </CardTitle>
-                                            <p>To install Git and Python type the following in the terminal window:</p>
+                                            <p>Enter the private key to the wallet which you are sending the Ether
+                                                from.</p>
                                             <InputGroup className="mb-3">
                                                 <Input/>
                                             </InputGroup>
