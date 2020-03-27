@@ -112,3 +112,7 @@ export default connect(
     changeDefaultClassnames
   }
 )(MenuTypes);
+
+
+
+export const menuTypes = new MenuTypes();

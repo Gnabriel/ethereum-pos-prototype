@@ -13,14 +13,14 @@ import {
     PaginationLink,
     Row
 } from 'reactstrap';
-import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
-import IntlMessages from "../../../helpers/IntlMessages";
+import { Colxx, Separator } from '../../../../components/common/CustomBootstrap';
+import IntlMessages from "../../../../helpers/IntlMessages";
 import CardText from "reactstrap/es/CardText";
 import {Form, Formik} from "formik";
-import {FormikCustomCheckbox} from "../../../containers/form-validations/FormikFields";
+import {FormikCustomCheckbox} from "../../../../containers/form-validations/FormikFields";
 import * as Yup from "yup";
-import { iconsmind, simplelineicons } from "../../../data/icons";
-import DropzoneExample from "../../../containers/forms/DropzoneExample";
+import { iconsmind, simplelineicons } from "../../../../data/icons";
+import DropzoneExample from "../../../../containers/forms/DropzoneExample";
 import {Link} from 'react-router-dom'
 
 
@@ -76,7 +76,7 @@ class UploadDashboard extends Component {
                 <Row>
                     <Colxx xxs="12">
                         <h2>
-                            Upload validator file
+                            Upload
                         </h2>
                         <Separator className="mb-5"/>
                     </Colxx>
@@ -91,7 +91,7 @@ class UploadDashboard extends Component {
                                     Upload validator file
                                 </CardTitle>
                                 <span>
-                                    Upload your validator file. <b>deposit-data.txt</b>
+                                    Upload the validator file that you generated in the previous step.
                                     <br/>
                                     <br/>
                                 </span>
@@ -111,7 +111,7 @@ class UploadDashboard extends Component {
                                                 <Button color="primary"
                                                         size="lg"
                                                         className="mb-2" >
-                                                    UPLOAD VALIDATOR FILE
+                                                    CONTINUE TO CONNECT
                                                 </Button>
                                             </Link>
                                         </Colxx>

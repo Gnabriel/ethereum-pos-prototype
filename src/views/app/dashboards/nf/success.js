@@ -13,16 +13,16 @@ import {
     PaginationLink,
     Row
 } from 'reactstrap';
-import { Colxx, Separator } from '../../../components/common/CustomBootstrap';
-import IntlMessages from "../../../helpers/IntlMessages";
+import { Colxx, Separator } from '../../../../components/common/CustomBootstrap';
+import IntlMessages from "../../../../helpers/IntlMessages";
 import CardText from "reactstrap/es/CardText";
 import {Form, Formik} from "formik";
-import {FormikCustomCheckbox} from "../../../containers/form-validations/FormikFields";
+import {FormikCustomCheckbox} from "../../../../containers/form-validations/FormikFields";
 import * as Yup from "yup";
-import { iconsmind, simplelineicons } from "../../../data/icons";
-import Congratulations from "../img/congratulations.png"
+import { iconsmind, simplelineicons } from "../../../../data/icons";
+import Congratulations from "../../img/congratulations.png"
 
-import {connectObj} from "./connect"
+import {inputValues} from "./connect"
 import {AvForm} from "availity-reactstrap-validation";
 
 
@@ -82,7 +82,7 @@ class SuccessDashboard extends Component {
                     }}>
                         <Row>
                             <Colxx>
-                                <Button color="primary" onClick={this.downloadText('inputs.txt', connectObj.handleSubmit)} size="lg"
+                                <Button color="primary" onClick={this.downloadText('inputs.txt', inputValues)} size="lg"
                                         className="mb-2">
                                     LADDA NED TEXTFIL
                                 </Button>

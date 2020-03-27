@@ -30,6 +30,30 @@ const SuccessDefault = React.lazy(() =>
 );
 
 
+
+// NO FRICTION
+const NFGenerateDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-nf-generate" */ './nf/generate')
+);
+const NFSummaryDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-nf-summary" */ './nf/summary')
+);
+const NFUploadDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-nf-upload" */ './nf/upload')
+);
+const NFConnectDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-nf-connect" */ './nf/connect')
+);
+const NFOverviewDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-nf-overview" */ './nf/overview')
+);
+const NFSuccessDefault = React.lazy(() =>
+    import(/* webpackChunkName: "dashboard-nf-success" */ './nf/success')
+);
+
+
+
+
 const Dashboards = ({ match }) => (
   <Suspense fallback={<div className="loading" />}>
     <Switch>
@@ -70,6 +94,35 @@ const Dashboards = ({ match }) => (
           path={`${match.url}/success`}
           render={props => <SuccessDefault {...props} />}
       />
+
+
+
+      {/* NO FRICTION */}
+      <Route
+          path={`${match.url}/nf/generate`}
+          render={props => <NFGenerateDefault {...props} />}
+      />
+      <Route
+          path={`${match.url}/nf/summary`}
+          render={props => <NFSummaryDefault {...props} />}
+      />
+      <Route
+          path={`${match.url}/nf/upload`}
+          render={props => <NFUploadDefault {...props} />}
+      />
+      <Route
+          path={`${match.url}/nf/connect`}
+          render={props => <NFConnectDefault {...props} />}
+      />
+      <Route
+          path={`${match.url}/nf/overview`}
+          render={props => <NFOverviewDefault {...props} />}
+      />
+      <Route
+          path={`${match.url}/nf/success`}
+          render={props => <NFSuccessDefault {...props} />}
+      />
+
       <Redirect to="/error" />
     </Switch>
   </Suspense>

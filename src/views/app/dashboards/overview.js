@@ -32,6 +32,7 @@ import GenerateKeys from "../img/generate-keys.jpg";
 import Careful from "../img/careful.jpg";
 import Deposit from "../img/deposit.jpg";
 import ModalUi from "../ui/components/modal";
+import menuTypes from "../menu/types"
 
 const SignupSchema = Yup.object().shape({
     checkboxCustomSingle: Yup.bool().oneOf([true], "Must agree to this")
@@ -50,7 +51,14 @@ class OverviewDashboard extends Component {
             modalBack: false,
             backdrop: true
         };
+
+        //const e = () => menuTypes.changeDefaultMenuType(e, "menu-hidden");
+        //menuTypes.changeDefaultMenuType("e", "menu-hidden");
     }
+
+    changeDefaultMenuType = (e, containerClassnames) => {
+        menuTypes.changeDefaultMenuType(e, containerClassnames);
+    };
 
     toggle = () => {
         this.setState(prevState => ({
@@ -174,12 +182,12 @@ class OverviewDashboard extends Component {
                                         You are about to become a validator of the Ethereum network. Each validation
                                         requires a staking of 32 ETH.<br/>
                                         <br/>
-                                        Due to the risk of phishing please follow these precautions:<br/>
+                                        Due to the risk of phishing we recommend that you:<br/>
 
-                                        1. To make sure that you are using the official staking website by Etherum
-                                        Foundation, manually write the url and reload this page.
+                                        1. Make sure that you are using the official staking website by Ethereum
+                                        Foundation by manually entering the URL to this website and refreshing it.
                                         <br/>
-                                        2. Do not copy/paste a wallet address. You should always manually write it.
+                                        2. Do not copy/paste a wallet address.
                                     </p>
                                 </div>
 
@@ -290,6 +298,14 @@ class OverviewDashboard extends Component {
                                     </Formik>
                                 </div>
 
+                                <Button
+                                    outline
+                                    color="primary"
+                                    className="mb-2"
+                                    onClick={e => this.changeDefaultMenuType(e, "menu-hidden")}
+                                >
+                                    <IntlMessages id="menu.hidden" />
+                                </Button>
 
                             </CardBody>
                         </Card>

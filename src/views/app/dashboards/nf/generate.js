@@ -12,11 +12,11 @@ import {
     PaginationLink,
     Row
 } from 'reactstrap';
-import {Colxx, Separator} from '../../../components/common/CustomBootstrap';
-import IntlMessages from "../../../helpers/IntlMessages";
+import {Colxx, Separator} from '../../../../components/common/CustomBootstrap';
+import IntlMessages from "../../../../helpers/IntlMessages";
 import CardText from "reactstrap/es/CardText";
 import {Form, Formik} from "formik";
-import {FormikCustomCheckbox} from "../../../containers/form-validations/FormikFields";
+import {FormikCustomCheckbox} from "../../../../containers/form-validations/FormikFields";
 import * as Yup from "yup";
 import {Link} from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -30,15 +30,10 @@ const SignupSchema = Yup.object().shape({
 class GenerateDashboard extends Component {
     constructor(props) {
         super(props);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit = (values, {setSubmitting}) => {
-        window.location.href='/app/dashboards/upload';
-
-        setTimeout(() => {
-            setSubmitting(false);
-        }, 1000);
+    changePage = () => {
+        window.location.href = '/app/dashboards/nf/upload';
     };
 
     render() {
@@ -126,7 +121,7 @@ class GenerateDashboard extends Component {
                                     2. Clone and install the deposit tool repository
                                 </CardTitle>
                                 <span>
-                                    Type the following lines into the terminal window and replace the <b>n</b> with the amount
+                                    Type the following lines into the terminal window and replace the n with the amount
                                     of validators you plan to run:
                                     <br/>
                                     <br/>
@@ -188,8 +183,8 @@ class GenerateDashboard extends Component {
                                         Please make sure to keep it safe, preferably offline.
                                     </span>
                                     <span>
-                                        <br/>The second file <b>deposit-data.txt </b>
-                                        ,you will need to upload in the next step.
+                                        <br/>The second file <b>deposit-data.txt </b>, the validator file,
+                                        , you will need to upload in the next step.
                                     </span>
                                 </CardText>
                             </CardBody>
@@ -201,60 +196,22 @@ class GenerateDashboard extends Component {
                     <Colxx>
                         <Card className="mb-4">
                             <CardBody>
-                                <Formik
-                                    initialValues={{
-                                        checkboxCustomSingle: false
-                                    }}
-                                    validationSchema={SignupSchema}
-                                    onSubmit={this.handleSubmit}>
-                                    {({
-                                          handleSubmit,
-                                          setFieldValue,
-                                          setFieldTouched,
-                                          handleChange,
-                                          handleBlur,
-                                          values,
-                                          errors,
-                                          touched,
-                                          isSubmitting
-                                      }) => (
-                                        <Form className="av-tooltip tooltip-label-right">
-                                            <FormGroup className="error-l-150">
-                                                <FormikCustomCheckbox
-                                                    name="checkboxCustomSingle"
-                                                    className="form-control"
-                                                    value={values.checkboxCustomSingle}
-                                                    label="I am keeping my keys safe and have
-                                                    backed up my private key bajs bajs bajs bajs vad ska stå?"
-                                                    onChange={setFieldValue}
-                                                    onBlur={setFieldTouched}
-                                                />
-                                                {errors.checkboxCustomSingle &&
-                                                touched.checkboxCustomSingle ? (
-                                                    <div className="invalid-feedback d-block">
-                                                        {errors.checkboxCustomSingle}
-                                                    </div>
-                                                ) : null}
-                                            </FormGroup>
 
-                                            {/* Next step button */}
-                                            <div style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                            }}>
-                                                <Row>
-                                                    <Colxx>
-                                                        <Button color="primary" type="submit" size="lg"
-                                                                className="mb-2" >
-                                                            CONTINUE TO UPLOAD
-                                                        </Button>
-                                                    </Colxx>
-                                                </Row>
-                                            </div>
-                                        </Form>
-                                    )}
-                                </Formik>
+                                {/* Next step button */}
+                                <div style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                }}>
+                                    <Row>
+                                        <Colxx>
+                                            <Button color="primary" onClick={this.changePage} size="lg"
+                                                    className="mb-2" >
+                                                CONTINUE TO UPLOAD
+                                            </Button>
+                                        </Colxx>
+                                    </Row>
+                                </div>
                             </CardBody>
                         </Card>
                     </Colxx>
