@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/connect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/generate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/overview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/success.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/summary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/connect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/generate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/generate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/success.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/success.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/menu/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/menu/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/upload.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="107" column="41" lean-forward="true" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+              <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -76,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/connect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
+            <state relative-caret-position="251">
+              <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -312,18 +301,17 @@
       <workItem from="1584445157547" duration="10045000" />
       <workItem from="1584956752372" duration="35780000" />
       <workItem from="1585211789431" duration="18889000" />
-      <workItem from="1585297972566" duration="14739000" />
+      <workItem from="1585297972566" duration="17375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84572000" />
+    <option name="totallyTimeSpent" value="87208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14626391" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14626391" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -337,7 +325,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25577265" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.40852576" />
       <window_info anchor="bottom" id="Floobits" order="11" weight="0.22735347" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -809,7 +797,7 @@
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="107" column="41" lean-forward="true" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -818,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/connect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="112" column="70" selection-start-line="112" selection-start-column="70" selection-end-line="112" selection-end-column="70" />
+        <state relative-caret-position="251">
+          <caret line="118" column="47" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
