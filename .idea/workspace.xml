@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.floo" beforeDir="false" afterPath="$PROJECT_DIR$/.floo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/generate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/generate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/nf/generate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/generate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/nf/overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/overview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/nf/success.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/nf/success.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/success.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/success.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/upload.js" afterDir="false" />
-    </list>
+    <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -35,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/overview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="235" column="84" selection-start-line="235" selection-start-column="69" selection-end-line="235" selection-end-column="84" />
+            <state relative-caret-position="197">
+              <caret line="77" column="32" lean-forward="true" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -47,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/generate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="119">
               <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -101,6 +91,13 @@
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-602" />
           </provider>
         </entry>
       </file>
@@ -183,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="948" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -296,17 +293,18 @@
       <workItem from="1584956752372" duration="35780000" />
       <workItem from="1585211789431" duration="18889000" />
       <workItem from="1585297972566" duration="24254000" />
-      <workItem from="1585581507178" duration="1384000" />
+      <workItem from="1585581507178" duration="1643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95471000" />
+    <option name="totallyTimeSpent" value="95730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19077902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19077902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -321,7 +319,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.30017763" />
-      <window_info active="true" anchor="bottom" id="Floobits" order="11" visible="true" weight="0.41740674" />
+      <window_info anchor="bottom" id="Floobits" order="11" visible="true" weight="0.41740674" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -685,26 +683,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/index.js" />
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/index.js" />
     <entry file="file://$PROJECT_DIR$/src/views/app/index.js" />
     <entry file="file://$PROJECT_DIR$/src/AppRenderer.js" />
     <entry file="file://$PROJECT_DIR$/src/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="8653" column="18" selection-start-line="8653" selection-start-column="18" selection-end-line="8653" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/generate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,10 +734,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-602" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/generate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/nf/overview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="235" column="84" selection-start-line="235" selection-start-column="69" selection-end-line="235" selection-end-column="84" />
+        <state relative-caret-position="197">
+          <caret line="77" column="32" lean-forward="true" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
