@@ -75,6 +75,7 @@ class SuccessDashboard extends Component {
                     </CardBody>
 
                     {/* Download text button */}
+                    {/*
                     <div style={{
                         display: 'flex',
                         alignItems: 'center',
@@ -89,6 +90,7 @@ class SuccessDashboard extends Component {
                             </Colxx>
                         </Row>
                     </div>
+                    */}
                 </Card>
 
             </Fragment>

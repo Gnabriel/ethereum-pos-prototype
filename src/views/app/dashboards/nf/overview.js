@@ -238,7 +238,7 @@ class OverviewDashboard extends Component {
                                     </Button>
                                 </div>
 
-
+                                {/*
                                 <Button
                                     outline
                                     color="primary"
@@ -247,6 +247,7 @@ class OverviewDashboard extends Component {
                                 >
                                     <IntlMessages id="menu.hidden" />
                                 </Button>
+                                */}
 
                             </CardBody>
                         </Card>

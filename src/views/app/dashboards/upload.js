@@ -173,7 +173,7 @@ class UploadDashboard extends Component {
                                             Caution
                                         </ModalHeader>
                                         <ModalBody>
-                                            Have you uploaded the correct file
+                                            Have you uploaded the correct file?
                                         </ModalBody>
                                         <ModalFooter>
                                             <Button color="primary"

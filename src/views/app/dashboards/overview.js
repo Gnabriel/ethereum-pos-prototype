@@ -297,7 +297,7 @@ class OverviewDashboard extends Component {
                                         )}
                                     </Formik>
                                 </div>
-
+                                {/*
                                 <Button
                                     outline
                                     color="primary"
@@ -306,6 +306,7 @@ class OverviewDashboard extends Component {
                                 >
                                     <IntlMessages id="menu.hidden" />
                                 </Button>
+                                */}
 
 
                             </CardBody>

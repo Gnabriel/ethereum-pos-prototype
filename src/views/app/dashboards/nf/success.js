@@ -46,6 +46,7 @@ class SuccessDashboard extends Component {
         }
     }
 
+
     render() {
         const { messages } = this.props.intl;
         return (
@@ -75,6 +76,7 @@ class SuccessDashboard extends Component {
                     </CardBody>
 
                     {/* Download text button */}
+                    {/*
                     <div style={{
                         display: 'flex',
                         alignItems: 'center',
@@ -89,6 +91,7 @@ class SuccessDashboard extends Component {
                             </Colxx>
                         </Row>
                     </div>
+                    */}
                 </Card>
 
             </Fragment>

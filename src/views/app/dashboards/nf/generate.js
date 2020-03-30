@@ -184,7 +184,7 @@ class GenerateDashboard extends Component {
                                 <CardText>
                                     <span>
                                         You will now have the file <b>eth-wallet.txt</b> saved,
-                                        which contains your key pairs and wallet adress.
+                                        which contains your wallet adress.
                                         Please make sure to keep it safe, preferably offline.
                                     </span>
                                     <span>
