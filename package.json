@@ -1,5 +1,5 @@
 {
-  "homepage": "http://github.com/Gnabriel/ethereum-pos-prototype",
+  "homepage": "https://ellebrink.me/ethereum-pos-prototype/",
   "name": "gogo-react",
   "version": "4.2.3",
   "description": "Gogo - React Bootstrap 4 Admin Dashboard Template",
@@ -52,7 +52,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "set HTTPS=true&&react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

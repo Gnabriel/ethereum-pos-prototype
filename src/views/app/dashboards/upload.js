@@ -7,7 +7,7 @@ import {
     CardBody,
     CardTitle, CustomInput, FormGroup, Input,
     InputGroup,
-    InputGroupAddon, Label,
+    InputGroupAddon, Label, Modal, ModalBody, ModalFooter, ModalHeader,
     Pagination,
     PaginationItem,
     PaginationLink,
@@ -27,7 +27,34 @@ import {Link} from 'react-router-dom'
 class UploadDashboard extends Component {
     constructor(props) {
         super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.state = {
+            modal: false,
+            modalRight: false,
+            modalLarge: false,
+            modalSmall: false,
+            modalLong: false,
+            modalBack: false,
+            backdrop: true
+        };
     }
+    toggle = () => {
+        this.setState(prevState => ({
+            modal: !prevState.modal
+        }));
+    };
+
+    handleSubmit = (values, {setSubmitting}) => {
+        this.toggle();
+
+        setTimeout(() => {
+            setSubmitting(false);
+        }, 1000);
+    };
+
+    changePage = () => {
+        window.location.href = '/app/dashboards/connect';
+    };
 
     render() {
         const { messages } = this.props.intl;
@@ -91,7 +118,7 @@ class UploadDashboard extends Component {
                                     Upload validator file
                                 </CardTitle>
                                 <span>
-                                    Upload your validator file. <b>deposit-data.txt</b>
+                                    Upload your validator file
                                     <br/>
                                     <br/>
                                 </span>
@@ -100,7 +127,7 @@ class UploadDashboard extends Component {
                                 <br/>
 
                                 {/* Next step button */}
-                                <div style={{
+                                {/*<div style={{
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -116,6 +143,54 @@ class UploadDashboard extends Component {
                                             </Link>
                                         </Colxx>
                                     </Row>
+                                </div>*/}
+
+                                <div style={{
+                                    margin: '2vw',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                }}>
+                                    <Formik
+                                        onSubmit={this.handleSubmit}>
+                                        {({
+                                              handleSubmit,
+                                              setFieldValue,
+                                              setFieldTouched,
+                                              handleChange,
+                                              handleBlur,
+                                              values,
+                                              errors,
+                                              touched,
+                                              isSubmitting
+                                          }) => (
+                                        <Form>
+                                    <Button color="primary" >
+                                        Become a validator
+                                    </Button>
+                                    <Modal isOpen={this.state.modal} toggle={this.toggle}>
+                                        <ModalHeader toggle={this.toggle}>
+                                            Caution
+                                        </ModalHeader>
+                                        <ModalBody>
+                                            Have you uploaded the correct file
+                                        </ModalBody>
+                                        <ModalFooter>
+                                            <Button color="primary"
+                                                    onClick={this.changePage}>
+                                                I have uploaded <b>deposit-data.txt</b>
+                                            </Button>
+                                            {" "}
+                                            <Button color="secondary" onClick={this.toggle}>
+                                                Cancel
+                                            </Button>
+                                        </ModalFooter>
+                                    </Modal>
+
+
+                                    </Form>
+                                        )}
+                                </Formik>
                                 </div>
                             </CardBody>
                         </Card>

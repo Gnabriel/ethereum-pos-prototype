@@ -126,8 +126,7 @@ class GenerateDashboard extends Component {
                                     2. Clone and install the deposit tool repository
                                 </CardTitle>
                                 <span>
-                                    Type the following lines into the terminal window and replace the <b>n</b> with the amount
-                                    of validators you plan to run:
+                                    Type the following lines into the terminal window.
                                     <br/>
                                     <br/>
                                 </span>
@@ -159,6 +158,12 @@ class GenerateDashboard extends Component {
                                         </Button>
                                     </InputGroupAddon>
                                 </InputGroup>
+                                <span>
+                                    Replace the <b>n</b> with the amount
+                                    of validators you plan to run
+                                </span>
+                                <br/>
+                                <br/>
                                 <InputGroup className="mb-3">
                                     <Input value={"python3 deposit.py --num_validators n"} disabled={true}/>
                                     <InputGroupAddon addonType="append">
@@ -224,8 +229,8 @@ class GenerateDashboard extends Component {
                                                     name="checkboxCustomSingle"
                                                     className="form-control"
                                                     value={values.checkboxCustomSingle}
-                                                    label="I am keeping my keys safe and have
-                                                    backed up my private key bajs bajs bajs bajs vad ska stå?"
+                                                    label="Two files have been saved at my desktop
+                                                    "
                                                     onChange={setFieldValue}
                                                     onBlur={setFieldTouched}
                                                 />

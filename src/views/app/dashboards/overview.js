@@ -307,6 +307,7 @@ class OverviewDashboard extends Component {
                                     <IntlMessages id="menu.hidden" />
                                 </Button>
 
+
                             </CardBody>
                         </Card>
                     </Colxx>

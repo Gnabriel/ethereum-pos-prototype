@@ -121,8 +121,7 @@ class GenerateDashboard extends Component {
                                     2. Clone and install the deposit tool repository
                                 </CardTitle>
                                 <span>
-                                    Type the following lines into the terminal window and replace the n with the amount
-                                    of validators you plan to run:
+                                    Type the following lines into the terminal window.
                                     <br/>
                                     <br/>
                                 </span>
@@ -154,6 +153,10 @@ class GenerateDashboard extends Component {
                                         </Button>
                                     </InputGroupAddon>
                                 </InputGroup>
+                                <span>
+                                    Replace the n with the amount
+                                    of validators you plan to run
+                                </span>
                                 <InputGroup className="mb-3">
                                     <Input value={"python3 deposit.py --num_validators n"} disabled={true}/>
                                     <InputGroupAddon addonType="append">

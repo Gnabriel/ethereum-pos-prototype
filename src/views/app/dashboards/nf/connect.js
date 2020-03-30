@@ -109,8 +109,8 @@ class ConnectDashboard extends Component {
                                                 the link.</p>
                                             */}
 
-                                            <AvField name="address" label="Enter the receiving wallet adress here. Do not copy/paste
-                                                the link." type="text"/>
+                                            <AvField name="address" label="Enter the receiving wallet adress here.
+                                                " type="text"/>
                                         </Colxx>
                                     </Row>
 
