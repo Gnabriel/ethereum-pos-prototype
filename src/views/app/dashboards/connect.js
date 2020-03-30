@@ -113,7 +113,7 @@ class ConnectDashboard extends Component {
                                                 the link." type="text" validate={{
                                                 required: {value: true, errorMessage: 'Please enter an address'},
                                                 pattern: {value: '^[A-Za-z0-9]+$', errorMessage: 'The address must be composed only with letter and numbers'},
-                                                minLength: {value: 1, errorMessage: 'Invalid address. The address must be 42 characters'},
+                                                minLength: {value: 42, errorMessage: 'Invalid address. The address must be 42 characters'},
                                                 maxLength: {value: 42, errorMessage: 'Invalid address. The address must be 42 characters'}
                                             }} />
                                         </Colxx>
@@ -167,7 +167,7 @@ class ConnectDashboard extends Component {
                                                 from." type="text" validate={{
                                                 required: {value: true, errorMessage: 'Please enter your private key'},
                                                 pattern: {value: '^[A-Za-z0-9]+$', errorMessage: 'The private key must be composed only with letter and numbers'},
-                                                minLength: {value: 1, errorMessage: 'Invalid private key. The key must be 64 characters'},
+                                                minLength: {value: 64, errorMessage: 'Invalid private key. The key must be 64 characters'},
                                                 maxLength: {value: 64, errorMessage: 'Invalid private key. The key must be 64 characters'}
                                             }} />
                                         </Colxx>

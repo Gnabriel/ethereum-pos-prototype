@@ -157,6 +157,8 @@ class GenerateDashboard extends Component {
                                     Replace the n with the amount
                                     of validators you plan to run
                                 </span>
+                                <br/>
+                                <br/>
                                 <InputGroup className="mb-3">
                                     <Input value={"python3 deposit.py --num_validators n"} disabled={true}/>
                                     <InputGroupAddon addonType="append">
