@@ -14,6 +14,7 @@ import NotificationContainer from './components/common/react-notifications/Notif
 import { isMultiColorActive, isDemo } from './constants/defaultValues';
 import { getDirection } from './helpers/Utils';
 
+
 const ViewMain = React.lazy(() =>
   import(/* webpackChunkName: "views" */ './views')
 );
@@ -74,7 +75,7 @@ class App extends Component {
             <NotificationContainer />
             {isMultiColorActive && <ColorSwitcher />}
             <Suspense fallback={<div className="loading" />}>
-              <Router>
+              <Router basename = "/ethereum-pos-prototype">
                 <Switch>
                   <AuthRoute
                     path="/app"
