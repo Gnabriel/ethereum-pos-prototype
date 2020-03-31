@@ -75,7 +75,7 @@ class OverviewDashboard extends Component {
     };
 
     changePage = () => {
-        window.location.href = '/app/dashboards/nf/generate';
+        window.location.href = 'ethereum-pos-prototype/app/dashboards/nf/generate';
     };
 
     render() {
