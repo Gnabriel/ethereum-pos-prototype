@@ -54,77 +54,81 @@ const NFSuccessDefault = React.lazy(() =>
 
 
 
-const Dashboards = ({ match }) => (
-  <Suspense fallback={<div className="loading" />}>
-    <Switch>
-      <Redirect exact from={`${match.url}/`} to={`${match.url}/generate`} />
-      <Route
-        path={`${match.url}/generate`}
-        render={props => <GenerateDefault {...props} />}
-      />
-      <Route
-        path={`${match.url}/content`}
-        render={props => <ContentDefault {...props} />}
-      />
-      <Route
-        path={`${match.url}/ecommerce`}
-        render={props => <EcommerceDefault {...props} />}
-      />
-      <Route
-        path={`${match.url}/analytics`}
-        render={props => <AnalyticsDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/summary`}
-          render={props => <SummaryDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/upload`}
-          render={props => <UploadDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/connect`}
-          render={props => <ConnectDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/overview`}
-          render={props => <OverviewDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/success`}
-          render={props => <SuccessDefault {...props} />}
-      />
+const Dashboards = ({ match }) => {
+    console.log(`${process.env.PUBLIC_URL}${match.url}/overview`);
+
+    return (
+        <Suspense fallback={<div className="loading" />}>
+            <Switch>
+                <Redirect exact from={`${match.url}/`} to={`${match.url}/generate`} />
+                <Route
+                    path={`${match.url}/generate`}
+                    render={props => <GenerateDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/content`}
+                    render={props => <ContentDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/ecommerce`}
+                    render={props => <EcommerceDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/analytics`}
+                    render={props => <AnalyticsDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/summary`}
+                    render={props => <SummaryDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/upload`}
+                    render={props => <UploadDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/connect`}
+                    render={props => <ConnectDefault {...props} />}
+                />
+                <Route
+                    path={`${process.env.PUBLIC_URL}/${match.url}/overview`}
+                    render={props => <OverviewDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/success`}
+                    render={props => <SuccessDefault {...props} />}
+                />
 
 
 
-      {/* NO FRICTION */}
-      <Route
-          path={`${match.url}/nf/generate`}
-          render={props => <NFGenerateDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/nf/summary`}
-          render={props => <NFSummaryDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/nf/upload`}
-          render={props => <NFUploadDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/nf/connect`}
-          render={props => <NFConnectDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/nf/overview`}
-          render={props => <NFOverviewDefault {...props} />}
-      />
-      <Route
-          path={`${match.url}/nf/success`}
-          render={props => <NFSuccessDefault {...props} />}
-      />
+                {/* NO FRICTION */}
+                <Route
+                    path={`${match.url}/nf/generate`}
+                    render={props => <NFGenerateDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/nf/summary`}
+                    render={props => <NFSummaryDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/nf/upload`}
+                    render={props => <NFUploadDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/nf/connect`}
+                    render={props => <NFConnectDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/nf/overview`}
+                    render={props => <NFOverviewDefault {...props} />}
+                />
+                <Route
+                    path={`${match.url}/nf/success`}
+                    render={props => <NFSuccessDefault {...props} />}
+                />
 
-      <Redirect to="/error" />
-    </Switch>
-  </Suspense>
-);
+                <Redirect to="/error" />
+            </Switch>
+        </Suspense>
+    )
+};
 export default Dashboards;
