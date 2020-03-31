@@ -78,7 +78,7 @@ class App extends Component {
               <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                   <AuthRoute
-                    path="/app"
+                    path="ethereum-pos-prototype/app"
                     authUser={loginUser}
                     component={ViewApp}
                   />
