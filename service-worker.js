@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ethereum-pos-prototype/precache-manifest.73c2753488c889ef9b90b7063e8e319d.js"
+  "/ethereum-pos-prototype/precache-manifest.f8640b2eb8eb5d50fae2f2754d6fd464.js"
 );
 
 self.addEventListener('message', (event) => {

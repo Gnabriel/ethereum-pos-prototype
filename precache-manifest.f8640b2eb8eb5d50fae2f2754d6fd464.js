@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa0543d2e2e80f00130303177d7b859a",
+    "revision": "83c9dc4245c7dfafcc45cec1db4295b3",
     "url": "/ethereum-pos-prototype/index.html"
   },
   {
@@ -516,8 +516,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethereum-pos-prototype/static/js/dashboard-upload.001ac7c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e1ac0fa5c90391cfb412",
-    "url": "/ethereum-pos-prototype/static/js/dashboards.6e20d0c1.chunk.js"
+    "revision": "9f74749d1fa8c52eb5cd",
+    "url": "/ethereum-pos-prototype/static/js/dashboards.282fe8e3.chunk.js"
   },
   {
     "revision": "20c3bfd7821fa0af2a8a",
@@ -640,8 +640,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ethereum-pos-prototype/static/js/profile-social.2a571e3c.chunk.js"
   },
   {
-    "revision": "ed4649309cf03f51e22f",
-    "url": "/ethereum-pos-prototype/static/js/runtime-main.6faecdde.js"
+    "revision": "ec67ce656c0d499f6ddb",
+    "url": "/ethereum-pos-prototype/static/js/runtime-main.8648af05.js"
   },
   {
     "revision": "7c8b7a0b2f96ecd89158",
