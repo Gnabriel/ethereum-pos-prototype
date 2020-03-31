@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/overview.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/overview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="77" column="80" lean-forward="true" selection-start-line="77" selection-start-column="80" selection-end-line="77" selection-end-column="80" />
+            <state relative-caret-position="116">
+              <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+            <state relative-caret-position="128">
+              <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -89,6 +89,7 @@
       <find>nextClasses</find>
       <find>BrowserRouter</find>
       <find>Router</find>
+      <find>ethereum-pos-prototype</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,8 +132,8 @@
         <option value="$PROJECT_DIR$/src/views/app/dashboards/nf/connect.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/nf/overview.js" />
-        <option value="$PROJECT_DIR$/src/views/app/dashboards/overview.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/overview.js" />
       </list>
     </option>
   </component>
@@ -240,12 +241,12 @@
       <workItem from="1584956752372" duration="35780000" />
       <workItem from="1585211789431" duration="18889000" />
       <workItem from="1585297972566" duration="24254000" />
-      <workItem from="1585581507178" duration="2969000" />
+      <workItem from="1585581507178" duration="3485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97056000" />
+    <option name="totallyTimeSpent" value="97572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -694,16 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/overview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="77" column="80" lean-forward="true" selection-start-line="77" selection-start-column="80" selection-end-line="77" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/app/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -719,8 +710,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="77" column="56" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
+        <state relative-caret-position="128">
+          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/overview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
