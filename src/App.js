@@ -75,7 +75,7 @@ class App extends Component {
             <NotificationContainer />
             {isMultiColorActive && <ColorSwitcher />}
             <Suspense fallback={<div className="loading" />}>
-              <Router>
+              <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                   <AuthRoute
                     path="/app"
