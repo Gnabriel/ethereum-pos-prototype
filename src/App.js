@@ -78,12 +78,12 @@ class App extends Component {
               <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                   <AuthRoute
-                    path="/app"
+                    exact path="/app"
                     authUser={loginUser}
                     component={ViewApp}
                   />
                   <Route
-                    path="/user"
+                    exact path="/user"
                     render={props => <ViewUser {...props} />}
                   />
                   <Route
