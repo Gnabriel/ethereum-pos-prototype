@@ -34,7 +34,7 @@ class App extends Component {
                 to={`${match.url}/dashboards`}
               />
               <Route
-                path={`${match.url}/dashboards`}
+                  exact path={`${match.url}/dashboards`}
                 render={props => <Dashboards {...props} />}
               />
               <Route
