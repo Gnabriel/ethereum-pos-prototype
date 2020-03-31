@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Gnabriel.github.io/ethereum-pos-prototype",
   "name": "gogo-react",
   "version": "4.2.3",
   "description": "Gogo - React Bootstrap 4 Admin Dashboard Template",
@@ -10,10 +9,13 @@
     "axios": "^0.18.0",
     "chart.js": "^2.9.3",
     "classnames": "2.2.6",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "firebase": "^5.9.4",
     "formik": "^1.5.1",
     "moment": "2.22.2",
     "mousetrap": "^1.6.5",
+    "path": "^0.12.7",
     "rc-slider": "^8.7.1",
     "rc-switch": "^1.6.0",
     "react": "^16.13.0",
@@ -52,7 +54,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

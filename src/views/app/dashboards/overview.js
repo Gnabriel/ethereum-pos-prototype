@@ -75,7 +75,7 @@ class OverviewDashboard extends Component {
     };
 
     changePage = () => {
-        window.location.href = '/ethereum-pos-prototype/app/dashboards/generate';
+        window.location.href = '/app/dashboards/generate';
     };
 
     render() {
@@ -125,7 +125,7 @@ class OverviewDashboard extends Component {
                 <Row>
                     <Colxx xxs="12">
                         <h2>
-                            Overview TESTTTTTTss
+                            Overview
                         </h2>
                         <Separator className="mb-5"/>
                     </Colxx>
