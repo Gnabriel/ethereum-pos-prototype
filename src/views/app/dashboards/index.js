@@ -59,7 +59,7 @@ const Dashboards = ({ match }) => (
     <Switch>
       <Redirect exact from={`${match.url}/`} to={`${match.url}/generate`} />
       <Route
-          exact path={`${match.url}/generate`}
+        path={`${match.url}/generate`}
         render={props => <GenerateDefault {...props} />}
       />
       <Route
@@ -87,7 +87,7 @@ const Dashboards = ({ match }) => (
           render={props => <ConnectDefault {...props} />}
       />
       <Route
-          exact path={`${match.url}/overview`}
+          path={`${match.url}/overview`}
           render={props => <OverviewDefault {...props} />}
       />
       <Route
