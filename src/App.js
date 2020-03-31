@@ -75,7 +75,7 @@ class App extends Component {
             <NotificationContainer />
             {isMultiColorActive && <ColorSwitcher />}
             <Suspense fallback={<div className="loading" />}>
-              <Router basename ="/ethereum-pos-prototype">
+              <Router>
                 <Switch>
                   <AuthRoute
                     path="/app"
