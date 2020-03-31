@@ -90,7 +90,7 @@ const Dashboards = ({ match }) => {
                     render={props => <ConnectDefault {...props} />}
                 />
                 <Route
-                    path={`${process.env.PUBLIC_URL}/${match.url}/overview`}
+                    path={`${match.url}/overview`}
                     render={props => <OverviewDefault {...props} />}
                 />
                 <Route
