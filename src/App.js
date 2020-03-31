@@ -46,7 +46,7 @@ const AuthRoute = ({ component: Component, authUser, ...rest }) => {
       }
     />
   );
-}
+};
 
 class App extends Component {
   constructor(props) {
@@ -64,6 +64,7 @@ class App extends Component {
   render() {
     const { locale, loginUser } = this.props;
     const currentAppLocale = AppLocale[locale];
+    console.log(process.env.PUBLIC_URL);
 
     return (
       <div className="h-100">
