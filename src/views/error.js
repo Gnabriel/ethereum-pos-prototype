@@ -36,6 +36,7 @@ class Error extends Component {
                       <IntlMessages id="pages.error-code" />
                     </p>
                     <p className="display-1 font-weight-bold mb-5">404</p>
+                    {/*
                     <Button
                       href="/app"
                       color="primary"
@@ -44,6 +45,7 @@ class Error extends Component {
                     >
                       <IntlMessages id="pages.go-back-home" />
                     </Button>
+                    */}
                   </div>
                 </Card>
               </Colxx>
