@@ -330,7 +330,6 @@ class Sidebar extends Component {
       collapsedMenus
     } = this.state;
     return (
-        {/*
       <div className="sidebar">
         <div className="main-menu">
           <div className="scroll">
@@ -494,7 +493,6 @@ class Sidebar extends Component {
           </div>
         </div>
       </div>
-      */}
     );
   }
 }
