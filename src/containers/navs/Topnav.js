@@ -201,6 +201,7 @@ class TopNav extends Component {
     const { messages } = this.props.intl;
     return (
       <nav className="navbar fixed-top">
+          {/*
         <div className="d-flex align-items-center navbar-left">
           <NavLink
             to="#"
@@ -218,7 +219,7 @@ class TopNav extends Component {
           >
             <MobileMenuIcon />
           </NavLink>
-          {/*
+
           <div className="search" data-search-path="/app/pages/search">
             <Input
               name="searchKeyword"
@@ -268,8 +269,9 @@ class TopNav extends Component {
               <IntlMessages id="user.buy" />
             </a>
           </div>
-          */}
+
         </div>
+        */}
 
 
         <a className="navbar-logo">
