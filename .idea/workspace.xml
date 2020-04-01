@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b9bb05-0cee-48ac-ace7-8a470fd52548" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/containers/navs/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/navs/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/app/dashboards/summary.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/navs/Topnav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1828">
+            <state relative-caret-position="98">
               <caret line="204" column="63" selection-start-line="204" selection-start-column="63" selection-end-line="204" selection-end-column="63" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -49,9 +49,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/summary.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/navs/Sidebar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="2879">
               <caret line="493" column="14" lean-forward="true" selection-start-line="493" selection-start-column="14" selection-end-line="493" selection-end-column="14" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
@@ -130,7 +142,6 @@
         <option value="$PROJECT_DIR$/src/assets/css/vendor/bootstrap.rtl.only.min.css" />
         <option value="$PROJECT_DIR$/src/assets/css/sass/_gogo.style.scss" />
         <option value="$PROJECT_DIR$/src/views/app/ui/components/modal.js" />
-        <option value="$PROJECT_DIR$/src/views/app/dashboards/summary.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/terminal.py" />
         <option value="$PROJECT_DIR$/src/views/app/menu/index.js" />
         <option value="$PROJECT_DIR$/src/views/app/dashboards/upload.js" />
@@ -152,6 +163,7 @@
         <option value="$PROJECT_DIR$/src/containers/navs/Topnav.js" />
         <option value="$PROJECT_DIR$/src/constants/defaultValues.js" />
         <option value="$PROJECT_DIR$/src/containers/navs/Sidebar.js" />
+        <option value="$PROJECT_DIR$/src/views/app/dashboards/summary.js" />
       </list>
     </option>
   </component>
@@ -182,13 +194,22 @@
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
               <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethereum-pos-prototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethereum-pos-prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboards" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,12 +271,12 @@
       <workItem from="1584956752372" duration="35780000" />
       <workItem from="1585211789431" duration="18889000" />
       <workItem from="1585297972566" duration="24254000" />
-      <workItem from="1585581507178" duration="17893000" />
+      <workItem from="1585581507178" duration="18523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111980000" />
+    <option name="totallyTimeSpent" value="112610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -484,16 +505,6 @@
           <caret line="35" column="41" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/summary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4104">
-          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,9 +744,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/navs/Sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2879">
+          <caret line="493" column="14" lean-forward="true" selection-start-line="493" selection-start-column="14" selection-end-line="493" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/navs/Topnav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1828">
+        <state relative-caret-position="98">
           <caret line="204" column="63" selection-start-line="204" selection-start-column="63" selection-end-line="204" selection-end-column="63" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -743,10 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/navs/Sidebar.js">
+    <entry file="file://$PROJECT_DIR$/src/views/app/dashboards/summary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="493" column="14" lean-forward="true" selection-start-line="493" selection-start-column="14" selection-end-line="493" selection-end-column="14" />
+        <state relative-caret-position="-51">
+          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>

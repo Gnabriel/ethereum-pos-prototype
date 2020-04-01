@@ -25,7 +25,6 @@ import { iconsmind, simplelineicons } from "../../../data/icons";
 
 const SignupSchema = Yup.object().shape({
     checkboxCustomSingle1: Yup.bool().oneOf([true], "Must agree to this"),
-    checkboxCustomSingle2: Yup.bool().oneOf([true], "Must agree to this"),
     checkboxCustomSingle3: Yup.bool().oneOf([true], "Must agree to this"),
 });
 
@@ -205,6 +204,7 @@ class SummaryDashboard extends Component {
                                                 ) : null}
                                             </FormGroup>
 
+                                            {/*
                                             <FormGroup className="error-l-150">
                                                 <FormikCustomCheckbox
                                                     name="checkboxCustomSingle2"
@@ -221,6 +221,7 @@ class SummaryDashboard extends Component {
                                                     </div>
                                                 ) : null}
                                             </FormGroup>
+                                                */}
 
                                             <FormGroup className="error-l-150">
                                                 <FormikCustomCheckbox
