@@ -109,8 +109,8 @@ class ConnectDashboard extends Component {
                                                 the link.</p>
                                             */}
 
-                                            <AvField name="address" label="Enter the receiving wallet adress here. Do not copy/paste
-                                                the link." type="text" validate={{
+                                            <AvField name="address" label="Enter the receiving wallet address here. Do not copy/paste
+                                                the address." type="text" validate={{
                                                 required: {value: true, errorMessage: 'Please enter an address'},
                                                 pattern: {value: '^[A-Za-z0-9]+$', errorMessage: 'The address must be composed only with letter and numbers'},
                                                 minLength: {value: 42, errorMessage: 'Invalid address. The address must be 42 characters'},
